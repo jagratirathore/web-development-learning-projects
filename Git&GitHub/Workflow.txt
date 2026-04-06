@@ -1,0 +1,47 @@
+Workflow:
+1)Github: code changes->commit
+2)Local Git: code changes-add(stage a change)->commit(commit changes)->push
+ 
+ or 
+
+🔹 Git Workflow
+1️⃣ GitHub (Direct Changes on GitHub)
+
+👉 Jab tum directly GitHub par changes karte ho:
+
+Code Changes → Commit
+
+📌 Example:
+
+GitHub par README.md open ki
+“Edit” button par click kiya
+Kuch text add kiya
+“Commit changes” par click kiya
+
+✔️ Change directly GitHub par save ho gaya
+
+2️⃣ Local Git Workflow (Recommended)
+
+👉 Jab tum apne system (VS Code / Terminal) par kaam karte ho:
+
+Code Changes → git add (stage) → git commit → git push
+
+📌 Example:
+
+File me changes kiye:
+README.md → "Created by Jagrati"
+Add (staging):
+git add README.md
+Commit:
+git commit -m "Updated README file"
+Push to GitHub:
+git push origin main
+
+✔️ Ab ye changes GitHub par bhi dikhne lagenge
+
+🔹 Simple Difference
+GitHub workflow → Direct online changes
+Local Git workflow → System par kaam karke GitHub par push karna (best practice)
+🔹 Final Summary
+Local:   Code → Add → Commit → Push  
+GitHub:  Code → Commit

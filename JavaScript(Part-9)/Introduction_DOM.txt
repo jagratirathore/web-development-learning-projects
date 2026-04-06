@@ -1,0 +1,7 @@
+<!-- #DOM: (Document Object Model)
+The DOM represents a document with a logical tree.IT allows us to manipluate/change wepage content (HTML elements)
+
+document(object h js me ye,node):it means that html + css ka code likhte h to pura code java script me convert hota h to logical tree ke form me convert hota h
+note-htm or css mil ke tree type structure(parent child ka child)ese strcuture me convert kr deti j js ke
+~basicaly html or css ko javascript ke code ke help se change kr skte h
+ -->

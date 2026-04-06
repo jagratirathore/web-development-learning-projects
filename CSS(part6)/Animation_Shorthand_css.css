@@ -1,0 +1,58 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    
+    /* shorthand */
+    animation:change_two_animation 5s ease-in-out 0s infinite normal;
+    
+  
+
+
+} 
+
+/* jese meko eske font size pe animation  create krna to fontAnimation name de ke me krungi  */
+
+@keyframes fontAnimation{
+    from{
+        font-size:20px;
+    }
+    to{
+        font-size:40px
+    }
+
+}
+
+/* color change krne ke liye bhi kr skte h hm */
+@keyframes colorAnimate{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: aqua;
+    }
+}
+
+
+/* width ko animate krna chahte h hm agr to */
+@keyframes widthAnimate{
+    from{
+        width: 10px;
+    }
+    to{
+        width: 400px;
+    }
+}
+
+/* do chize sath me bhi change kr va skte hm ,ese hi hm bhut saari chiz ek sath add kr skte h border-radius vgera  bhi*/
+@keyframes change_two_animation{
+    from{
+        font-size:20px;
+        background-color: blueviolet;
+    }
+    to{
+        font-size:40px;
+        background-color: green;
+    }
+
+}

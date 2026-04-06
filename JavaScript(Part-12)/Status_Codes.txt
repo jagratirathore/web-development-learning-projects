@@ -1,0 +1,41 @@
+// Status Codes:
+
+// generally jab hm APIs ke sath deal krte h to API jab response deti h
+// to uske sath ek status code bhi aata h jo batata h request successful thi ya nhi
+
+
+// Examples:
+
+// 200 -> OK
+// agr API call krte waqt response ke sath 200 OK aata h
+// mtlb sb kuch sahi h, request successfully complete ho gayi h
+// example: valid API call krne pr data properly mil jata h
+
+// 404 -> Not Found
+// agr hm kisi aisi API ko call krte h jo exist hi nhi krti
+// to 404 status code aata h
+// ex: https://dog.ceo/api/breeds/image/random222 (invalid endpoint)
+
+// 400 -> Bad Request
+// jb hm galat request bhejte h (invalid data, wrong syntax, missing params)
+// to 400 error aata h
+// example: API ko required data na bhejna ya galat format me bhejna
+
+// 500 -> Internal Server Error
+// jb server side par koi problem hoti h
+// to 500 error aata h
+// example: server crash ho jana ya backend code me error hona
+
+
+// note:
+// sirf itne hi status codes nhi hote, bhut saare hote h
+// aur detail me pdne ke liye hm "status codes MDN" search kr skte h
+
+
+// Status Code Categories:
+
+// 100 - 199  → Informational responses
+// 200 - 299  → Successful responses
+// 300 - 399  → Redirection messages
+// 400 - 499  → Client error responses
+// 500 - 599  → Server error responses

@@ -1,0 +1,28 @@
+/* Align Content-it sets the distribution of space between and around content items along a flexbox's cross-axis
+(ye same vhi kaam krta h jo justify-content krta tha ki space between,evenly kha aana chaiye chi kaam ye bhi krta h)->bs difference itna hi h ki ye cross axis me krta h align content or vo justify content main axis me krta tha
+
+align-content:flex-start/flex-end/center-->
+align-content:space-between/space-around/evenly-->
+align-content:baseline;--> */
+
+#container{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+h1{
+    text-align: center;
+}
+#container div{
+    width: 100px;
+    height: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

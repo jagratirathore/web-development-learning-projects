@@ -1,0 +1,24 @@
+/* Components:-
+1)Buttons-jb bhi meko bootstrap ke and styling dena hota h to hm add krte h class="btn"or ye skip bhi kr skte h es se koi farak nhi pdta(type="button"),or pura code bootstap se button ka copy paste kr bhi skte base- kr ke bootestrap ki website pr read the docs pe ja kr buttons pe base kr ke code hoga vha 
+
+#Button variants site pe mil jaayega bootstap ki-
+~blue color button-btn-primary
+~grey color button-btn-secondary
+~green color button-btn-success
+~red color button-btn-danger
+~ yellow color button-btn-warning
+~skyblue color button-btn-Info
+~white color button-btn-iight
+~black color button-btn-dark
+~link color button-btn-link 
+
+note-ye sb aap bootstrap ki site pe ja ke direct button me ja ke variant me ja ke copy paste kr skte h
+
+~bootstrap pe or bhi differnet differnet chize available hoti h jese button tags jo use kr skte h,outline buttons-serf esme hmko (btn-outlines-warning)serf bech me outline add krna hota ha
+*/
+
+
+
+.btn-primary{
+    background-color: lightpink;
+}

@@ -1,0 +1,36 @@
+
+h2{
+text-align:center;
+/* border: solid;
+width: 50%; */
+text-decoration: wavy red underline;
+letter-spacing: 10px;
+
+font-family: Arial;
+}
+
+h3{
+    text-align:right;
+    text-decoration: line-through;
+}
+h4{
+     text-align:end;
+     font-weight: 400;
+     /* normal range hoti 400 */
+     text-decoration: overline;
+}
+
+
+p{
+    text-align: justify;
+    line-height: 2.5;
+    font-size: 10px;
+    font-family:avant garde,didot,sans-serif ;
+
+}
+a{
+     text-decoration: none;
+     /* link ke niche jo line aati h usko remove kr dete non kr ke text decoration me (es single list me koi bhi set kr skte h hm automatic jo bhi font h vo display kr va do*/
+     
+
+}

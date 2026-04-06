@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Results_&_Errors_In_Promises.css">
+</head>
+<body>
+    <script src="Results_&_Errors_In_Promises.js"></script>
+</body>
+</html>
+<!-- Promises: promises are rejected and resolved with some data (valid results or errors)
+
+saveToDBPromise("apnacollege")
+ .then((result)=>{
+    console.log("result: ", result);
+    consoel.log("promise1 resolved");
+    return saveToDBPromise("hello world");
+ })
+ .then((result)=>{
+    console.log("result:", result);
+    console.log("promise2 resolved");
+ })
+ .catch((error)=>{
+    console.log("error: ",error);
+    console.log("some promise rejected");
+ }); -->

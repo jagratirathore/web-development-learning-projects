@@ -1,0 +1,26 @@
+#Bootstrap->Bootstrap it means that it is a framework of css(eske and toolkit hoti h jese fastest box jisme sb saaman hota h bs hm nikaal ke direct use kr skte h vese hi bootstrap me toolkit hoti h hm bs har chiz nikaal nikaal ke use krte h esme or css me hmko kaabi chize bnana bdti h)
+~jese website bna ne ke liye kya kya chaiye hi hota h-
+*botton
+*nav bootstrap
+*cards
+*forms (contact ke liye form,signup ke liye login ke liye form)etc
+ye different components hm ko baar baar use krna hota h to bootstrap vo skti deta h ki jinko baar baar use krna h components ko achi styling deke toolkit bna ke tyaar rkh rkha h(esiliye esme hmko kaafi styling nhi krni pdti jo acha lga button vo le skte h)
+
+~Framework hi toolkit h
+
+#Bootstrap:Bootstrap is a very special framework h jo flexbox pe work krta h and in bootstrap their is mainy pre-built components bhi hote h like-button,forms,navbar,card.esme prebuilt css file hoti h(esme puri css file built hoti h serf directly code css file ka le skte h or add kr skte h documentation me ) 
+
+#Defination of bootstrap : Bootstrap is a powerful,feature-packed frontend toolkit.Build anythink-from prototype to production-in minutes.
+
+#Website of Bootstrap: getbootstrap.com->agr or bhi jaan na ho bootstrap ke baare me to hm Read the docs pe ja ke pd skte h bootstrap ke baare me or jaan skte h
+Note :components ke code me serf css hi nhi javascript bhi available hoti h esme
+
+
+#
+Benifits of Bootstrap:
+~Makes Development Faster & Easier
+~Good choice of pre-built components(already responsive hote h or kuch likhne ki jarurat nhi pdti h esme hme already hote h reponsive inspect kr ke check kr skte h (acc to phone or desktop it takes space is called responsive))
+~good browser Compatibility(maximum browser pe support krta h,esa nhi ki serf google,safari pe hi kr rha or firefox pe nhi )
+
+#Then why we are using css if bootstrap gives this best features only you can use it then-
+Because jaruri nhi h ki jesa aap soch rhe ho exactly vesa component mil jaayega,but already aapne kisi component ka layout le liya h to aap or customized krne ke liye use kr skte h css ka (vanila css or pure css or css hi main hoti h serf jb hmko jldi bnana ho koi website to hi hm use krte h ye bootstrap)

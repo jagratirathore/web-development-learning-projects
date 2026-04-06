@@ -1,0 +1,4 @@
+Serving Static Files:
+app.use(express.static(folder_name))
+
+app.use(express.static(path.join(_dirname,"public")));

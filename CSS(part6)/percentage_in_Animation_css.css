@@ -1,0 +1,40 @@
+/* % in Animation->(3 state me transition apply krna h to hm use krte h % ka, or 4,5 6 state kitni bhi le skte h hm esme) from me state 1 thi jo 0% se start ho ke ... (to) state 2 me ja rhi jo 100% h ...or eske bich ek or state aa rhi (50%)ki to hm percentage ka use krte h
+
+@keyframes myName{
+    0%{font-size:20px;}
+    50%{font-size:30px;}
+    100%{font-size:40px;}
+} */
+
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    
+    
+    animation:state3_animation 5s ease-in-out 0s infinite normal;
+    
+  
+
+
+} 
+
+
+@keyframes state3_animation{
+   0% {
+        background-color: brown;
+    }
+    50%{
+        background-color: bisque;
+    }
+    75%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: green;
+
+    }
+
+}
+
+

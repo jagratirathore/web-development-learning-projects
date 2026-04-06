@@ -1,0 +1,173 @@
+✅ Notes: GitHub Dashboard & Profile
+Jab hum GitHub open karte hain, to ek dashboard page aata hai.
+👉 Ye hamara main GitHub dashboard hota hai.
+Top right corner me ek profile icon (circle with image) hota hai.
+👉 Us par click karne par multiple options milte hain:
+🔹 Options in Profile Menu
+Your repositories
+👉 Yahan par wo sabhi projects (repositories) dikhte hain jo humne upload kiye hote hain.
+Your profile
+👉 Isme hamara profile page open hota hai
+👉 Yahan ek contribution graph hota hai jisme dikhata hai:
+Humne kis date par GitHub use kiya
+Kitna active rahe (commits, pushes, etc.)
+Edit profile
+👉 Is option se hum apni profile details edit kar sakte hain:
+Name
+Bio
+Profile image
+Links, etc.
+🔹 Repositories
+Repository (Repo) = Project ka folder
+Isme include hota hai:
+Code files
+Images
+Documentation
+
+👉 Simple words me:
+Repositories = GitHub par uploaded projects
+
+🔹 Projects
+Projects ka matlab hota hai:
+👉 Jo applications / websites / software hum banate hain
+
+Example:
+
+Website project
+Java project
+API project
+
+👉 In sab ko hum GitHub par repositories ke form me store karte hain
+
+Better Explanation (Notes Style)
+Hum GitHub par apne college ka naam search kar sakte hain
+Agar uska koi project ya repository available ho, to:
+👉 Hum us repository par jaakar code, files, aur details dekh sakte hain
+
+👉 Simple words me:
+GitHub par kisi bhi college, company ya developer ke projects (repositories) ko search karke explore kiya ja sakta hai.
+
+#Let's Create our Github Account: 
+Create a new account or log in.
+Create a new repository: delta-demo 
+✅ Creating a New Repository on GitHub
+🔹 Steps to Create Repository
+Open GitHub
+Top menu me Repositories tab par click karo
+Wahan tumhe green color ka “New” button dikhega
+Us par click karte hi “Create a new repository” page open ho jayega
+🔹 Basic Details Fill Karna
+Owner:
+👉 Repository ka owner kaun hoga (e.g., jagrati-rathore)
+Repository Name:
+👉 Example: delta-demo
+Description (Recommended):
+👉 This is a demo for Git and GitHub class
+✔️ Description likhna good practice hoti hai
+🔹 Repository Types
+Public Repository
+Sab log dekh sakte hain
+Jo bhi tumhara profile visit karega, use visible hoga
+👉 Example: Instagram public post jaisa
+Private Repository
+Sirf selected log access kar sakte hain
+Companies apne secret projects ke liye use karti hain
+👉 Example: Microsoft jaise organizations apne projects private rakhti hain
+
+👉 Tum apne kaam ke according repo type choose karte ho
+
+🔹 Important Note (Job Perspective)
+Agar tum GitHub link kisi company ya HR ko bhej rahe ho:
+👉 Ensure karo ki repository Public ho
+Taaki HR / Interviewer tumhara code dekh sake
+🔹 Add a README File
+Option aata hai: “Add a README file” ✔️ (tick karna recommended)
+README.md kya hoti hai?
+.md = Markdown file
+Project ki details likhne ke liye use hoti hai:
+Project kyu banaya
+Features kya hain
+Kaise use karna hai
+
+👉 Ye file project ko samajhne me help karti hai
+👉 Good practice: hamesha README add karo
+
+✅ After Creating Repository
+Repository (delta-demo) open karo
+Tumhe Code tab dikhega
+Default branch: main
+🔹 Files View
+README.md file dikhegi
+Niche uska content bhi show hoga
+👉 Example: This is a demo for Git and GitHub class
+✅ What is Commit?
+
+👉 Commit = Changes ko save karna (finalize karna)
+
+🔹 Steps:
+Add → Changes prepare karna
+Commit → Final stamp lagana
+🔹 Real-Life Example
+Tumne ek letter likha
+Likha hua content = Add
+Us par stamp lagana = Commit
+✅ Viewing Changes
+GitHub automatically changes track karta hai
+Tum commit history dekh sakte ho
+🔹 Colors Meaning:
+🟢 Green (+) → Added content
+🔴 Red (-) → Deleted/modified content
+✅ Editing File on GitHub
+File open karo (README.md)
+Pencil icon (Edit button) par click karo
+Direct GitHub par hi changes kar sakte ho
+
+👉 Example:
+
+“class.” ke baad ek dot (.) add kiya
+Ye bhi ek change count hoga
+🔹 Commit Changes
+“Commit changes” button par click karo
+Ek popup aayega:
+Commit message (meaningful likho):
+👉 Example: Update README.md
+Option select karo:
+👉 Commit directly to the main branch
+Phir Commit changes par click karo ✔️
+✅ Checking Commit History
+Pehle: Initial commit
+Baad me: Update README.md
+
+👉 Commit par click karke dekh sakte ho:
+
+Kaunsa change hua
+Kitni files change hui
+
+Example:
+
+“1 file changed, 1 addition, 1 deletion”
+✅ Deleting File from GitHub
+File open karo (README.md)
+Right side 3 dots (⋯) par click karo
+Delete file option select karo
+
+👉 Delete bhi ek change hota hai
+
+Commit message likho:ki ku delte krna chahte file ko
+👉 Delete README.md
+Commit changes par click karo ✔️
+📝 Final Note
+GitHub ek easy-to-use website hai beginners ke liye
+Lekin professional development me:
+Developers mostly Git (via Terminal) use karte hain
+
+👉 Tum:
+
+VS Code se files bana sakte ho
+Ya Terminal se bhi same kaam kar sakte ho
+
+👉 Important:
+
+Developer ko Git + GitHub dono aana chahiye ✔️
+README.md->project(md=markdown)
+commit->change

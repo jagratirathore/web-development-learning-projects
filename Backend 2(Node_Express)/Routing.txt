@@ -1,0 +1,11 @@
+#Routing: It is process of selecting a path for traffic in a network or between or across multiple networks.
+
+app.get("/apple",(rq,res)=>{
+    res.send({
+        name: "apple",
+        color: "red",
+    });
+});
+
+
+#Nodemon: To automatically restart server with code changes.

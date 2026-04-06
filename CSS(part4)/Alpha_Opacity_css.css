@@ -1,0 +1,19 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color:rgba(21, 255, 0, 0.639);
+    /* a->0 (kuch nhi dikhega color,1 kiya to pura red dikhega,0.5 kiya to half red half transparent) */
+ /* }hex code me alpha value 00(hidden)-ff(visible) or code->#4dff00a1(a1 is aplha value)  */
+}
+
+/* Opacity->Sets the opacity for the element (range from 0(complete hidden) to 1(complete visible))ex-opacity:0.5
+alpha-color kitna dikai dega kitna nhi
+opacity:0.5
+opacity-element kitna dikhai dega kitna nhi */
+#opacity{
+    background-color: #ffa511;
+    opacity: 1;
+    
+    /* div pe kiya to opacity matters jese hi opacity ko 0 kiya heading or button dono gayab ho jaayega, or jese ho opacity 1 kiya dono vaps dikhne lgega
+    or opacity ko 0 kiya to pura box button heading sb gayab or jese hi opacity 1 kiya dark background color aayega ,or jese hi 0.5 kiya opacity vo ligh color 50% light kr ke show krega as a output */
+}

@@ -1,0 +1,55 @@
+/* Common Properties-
+
+justify-items  (container) -horizontal->hmara item start krnege to start me place hoga end krenge to end me or center krnege to center me inspect kr ke dekho(sabhi content ko place krta h ye)
+justify-self  (item) -horizontal->(individual item ko place krna ho  to ye)
+
+align-items  (container) -vertical direction me place honge (saare item)
+align-self  (item) -vertical(indivisual item)
+
+place-items->center(saare item placed ho gye senter me)
+place-self->(indivisual item) 
+display:grid;(set krne se kya hota h hmara container block item ke tarah react krne lge ga bhale vo block ho ya na ho
+display:inline-grid(grid ke baad create hoga)*/
+ 
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: yellow ;
+    /* display: grid; */
+    display: inline-grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+    /* grid: gap 10px; */
+    /* justify-items: start; */
+    /* justify-items: end; */
+    /* justify-items: center; */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
+    place-items: center;
+    
+     
+    
+
+ 
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+/* .one{
+        justify-self: start;
+    } */
+    /* .two{
+        align-self: end;
+    }
+ */
+ .two{
+    place-self: start;
+ }

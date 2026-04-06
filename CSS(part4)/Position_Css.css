@@ -1,0 +1,51 @@
+/* position-pure document me us element ki position kha hona chaiye jese koi div create kiya uski position kha hona chaiye pure document me
+final location->determine krti h ye 4 property
+top,right,bottom and left 
+static->(z-index property have no effect)left,right,top,bottom ko koi fark nhi pdta element pe agr static kr diya koi effect nhi hoga-this is the default value
+relative->(Space create krta h document ke liye)offset is relative to itself hote h(bich me ek point se esko l,r,t,b shift krte h
+absolute->(koi space create nhi krta h document ke liye)center point left top most ho ga vaha se khaska rhe honge hm or ye parent pe lgta h
+fixed-> (space create nhi hoti) screen ke upr vese ke vese fix hota h just like navbar  */
+/* sticky-> screen pe stick kr jaayega ek jgha*/
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+#static{
+    background-color: yellow;
+    position: static;
+    /* position fixed ho jaayegi eske baad vaale top(top se change krne ki kosish ki thi position-eshi ko offset bolte h) left(left se change krne ki kosish ki thi position-eshi ko offset bolte h) kuch kaam nhi aayenge (no change)bcz static  */
+    top: 100px;
+    left:100px;
+}
+
+#relative{
+    background-color: yellow;
+    position: relative;
+    /* changes ho jaayenge top se 100 or left se 100 -bcz this is relative  */
+    top: 100px;
+    left:100px;
+}
+
+
+/* offset-kuch space khaska diya (force kha se lgaai left se)agr left-offset likha to */
+#absolute{
+    background-color: yellow;
+    position: absolute;
+    /* top se measurment le ke shift krta h ,parent ke pass section ke pass kuch nhi h to esne body pe or pure document pe move kiya  */
+    top: 100px;
+    left:100px;
+}
+
+#fixed{
+    background-color: yellow;
+    position: fixed;
+    /* top se measurment le ke shift krta h ,parent ke pass section ke pass kuch nhi h to esne body pe or pure document pe move kiya  */
+    top: 100px;
+    left:100px;
+}

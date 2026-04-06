@@ -1,0 +1,112 @@
+Step 1: Create Files in Local Project
+// project2 ke andar files create karenge:
+index.html
+README.md
+
+👉 README.md ke andar likhenge:
+
+# New Project
+This project was created from local system.
+🔹 Step 2: Create Repository on GitHub
+Profile → Repositories → New
+Repository name: project2
+Visibility: Public
+❌ Description mat do
+❌ README add mat karo (empty repo rakhenge)
+🔹 Step 3: Connect Local Project to GitHub
+
+👉 GitHub repo create karne ke baad Quick Setup me ek link milegi (HTTPS)
+
+1️⃣ Add Remote
+git remote add origin <repository-link>
+
+📌 Example:
+
+git remote add origin https://github.com/username/project2.git
+
+👉 Meaning:
+
+remote = jaha hum code push karna chahte hain (GitHub)
+origin = remote repo ka default naam
+2️⃣ Verify Remote
+git remote -v
+
+👉 Output:
+
+origin  https://github.com/username/project2.git (fetch)
+origin  https://github.com/username/project2.git (push)
+
+✔️ Matlab local repo GitHub se connect ho gaya
+
+3️⃣ Check Branch
+git branch
+
+👉 Output:
+
+* master
+
+ya
+
+* main
+4️⃣ Rename Branch (if needed)
+git branch -M main
+
+👉 Matlab:
+
+Branch ka naam main kar diya
+🔹 Step 4: Add, Commit & Push
+Add files
+git add .
+Commit
+git commit -m "First commit"
+Push
+git push origin main
+🔹 Shortcut Command (Important)
+git push -u origin main
+
+👉 -u ka matlab:
+
+Upstream set ho jaata hai
+Next time sirf git push likhna padega (origin main baar-baar nahi likhna)
+🔹 Final Result
+
+👉 GitHub par refresh karne ke baad:
+
+README.md
+index.html
+
+✔️ Dono files dikhne lagenge
+
+🔹 Updating Changes (After First Push)
+
+👉 VS Code me changes karo:
+
+Example (README.md me add karo):
+
+Created by Jagrati Rathore
+🔹 Steps to Update on GitHub
+Check status:
+git status
+
+👉 Output: modified: README.md
+
+Add:
+git add .
+Commit:
+git commit -m "Add name"
+Push:
+git push
+🔹 After Push
+
+👉 GitHub refresh karo
+✔️ Saare new changes dikhne lagenge
+
+🔹 Complete Flow (Simple)
+Create Files → git add → git commit → connect GitHub → git push
+→ changes → git add → git commit → git push
+🔹 Command Meanings (Quick Revision)
+git remote add origin <link> → GitHub repo connect karna
+git remote -v → connection verify karna
+git branch → current branch dekhna
+git branch -M main → branch rename karna
+git push origin main → code GitHub par bhejna

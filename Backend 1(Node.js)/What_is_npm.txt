@@ -1,0 +1,3 @@
+NPM(Node Package Manager):npm is the standard package manager for Node.js
+1)library Of packages
+2)command line tool

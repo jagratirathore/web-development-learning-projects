@@ -1,0 +1,80 @@
+# APIs(Application Programming Interface): google(amazon.in),link(url)--{request}-->amazon server--{response}-->HTML,CSS,JS-->in browser
+~user(customer)--{request}-->APIs(or Web APIs(https), ye waiter h)-->Kitchen(back response aayega to user to serve food)
+~APIs -->data(JSON)
+~Software to -->APIs--Software 
+~user(client)-->request -->URL(APIs)is called as endpoint or link-->then this APIs again give back reponse to user or (Client)
+
+
+notes-
+// Request-Response Cycle ko samajhte hain:
+
+// Jab bhi hum browser me koi website URL search karte hain (jaise amazon.in),
+// to iska matlab hota hai ki hum us website ke server (Amazon server)or link or endpoints or url ko request bhej rahe hain.
+
+// Server us request ko process karta hai aur response bhejta hai,reponse hmara always data-JSON format me aata h
+// jo generally HTML, CSS aur JavaScript files ke form me hota hai.
+// Browser in files ko read karke ek proper web page me convert karke display karta hai.
+
+
+// Ab same concept APIs ke saath:
+
+// Yahan hum directly server se poori website nahi maangte,
+// balki APIs ke through specific data ke liye request bhejte hain.
+
+// API hume response HTML/CSS/JS me nahi deti,
+// balki raw data ke form me deti hai (mostly JSON format me).
+
+// Iska fayda:
+// - Puri website reload nahi hoti
+// - Sirf required data update hota hai
+
+
+// Example:
+// Instagram par jab hum kisi post ko like karte hain,
+// to sirf like count update hota hai,
+// puri website reload nahi hoti.
+
+// Yani API request ke through sirf data change hota hai,
+// na ki poora page reload hota hai.
+
+// APIs: API ka full form hota hai Application Programming Interface.
+
+
+// Example:
+// API ko hum waiter ki tarah samajh sakte hain.
+
+// User directly server (kitchen) se baat nahi karta,
+// balki API (waiter) ke through request bhejta hai.
+
+// Flow:
+// User (JS code) → request → API (waiter) → Server (kitchen)
+// Server → response → API (waiter) → User
+
+
+// Jab hum Node.js me server banate hain,
+// to hum APIs create karte hain taaki users directly server se nahi,
+// balki APIs ke through interact kar sakein.
+
+
+// Interface:
+// API ek beech ka layer (interface) hota hai
+// jo user aur server ke beech communication karvata hai.
+
+
+// Generally:
+// APIs ka use do software systems ke beech communication ke liye hota hai.
+// Jab do applications ko interact karna hota hai,
+// to wo APIs ke through hi communicate karte hain.
+
+
+// Web APIs:
+// Jo APIs HTTP protocol ka use karti hain
+// aur internet ke through communication karvati hain,
+// unhe Web APIs kaha jata hai.
+
+// Maximum cases me hum Web APIs ke saath hi kaam karte hain.
+
+
+// Response Format:
+// APIs generally data return karti hain,
+// aur ye data mostly JSON (JavaScript Object Notation) format me hota hai.

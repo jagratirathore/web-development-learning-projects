@@ -1,0 +1,8 @@
+Passing data to EJS: 
+
+app.get("/rolldice",(req, res)=>{
+    let num = Math.floor(Math.random()*6)+1;
+    res.render("rollDice.ejs",{diceVal: num});
+});
+
+<h1>Your dice gave value: <%= diceVal %> </h1>

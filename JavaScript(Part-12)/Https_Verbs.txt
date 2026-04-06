@@ -1,0 +1,41 @@
+// HTTP Verbs (Methods):
+
+// jb bhi hm HTTP ke through request bhejte h server ko,
+// to us request ka type batane ke liye verbs (methods) use hote h
+
+// jab hm browser me URL likhte h (https://...), to by default GET request jati h
+
+// kuch common HTTP verbs (methods):
+// GET, POST, PUT, PATCH, DELETE, HEAD, CONNECT etc.
+
+
+// Examples:
+
+// 1) GET:
+// jb hme kisi server/API se data lena (fetch krna) hota h
+// ex: API call krne pr JSON data aa rha h → ye GET request hoti h
+
+// 2) POST:
+// jb hm server/API ko kuch data bhejna chahte h (create krne ke liye)
+// ex: form data submit krna, new user add krna
+
+// 3) PUT:
+// jb hm pura data update/replace krna chahte h
+
+// 4) PATCH:
+// jb hm data ka kuch part update krna chahte h (partial update)
+
+// 5) DELETE:
+// jb hm kisi data/resource ko delete krna chahte h
+
+// 6) HEAD:
+// GET jaisa hi hota h but sirf headers return krta h, body nhi
+
+// 7) CONNECT:
+// mainly secure connection establish krne ke liye use hota h
+
+
+// note:
+// hm in HTTP verbs ke sath tab properly deal krenge
+// jab hm server-side work ya khud ki APIs banana start krenge
+// tab hm different HTTP methods ka use krte h

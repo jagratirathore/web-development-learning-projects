@@ -1,0 +1,93 @@
+#Branch Commands:
+git branch  (to check branch)
+git branch -M main (to rename branch)
+git checkout <-branch name-> (to navigate)
+git checkout -b <-new branch name-> (to create new branch)
+git branch -d <-branch name-> (to delete branch)
+ 
+
+or
+
+
+🔹 Git Branch Commands
+1️⃣ Check Branches
+
+👉 Repository me available branches dekhne ke liye:
+
+git branch
+
+📌 Example Output:
+
+* main
+  dev
+  feature-login
+
+✔️ * current (active) branch ko show karta hai
+
+2️⃣ Rename Branch
+
+👉 Branch ka naam change karne ke liye:
+
+git branch -M main
+
+📌 Example:
+
+git branch -M master main
+
+✔️ master branch ka naam change ho kar main ho jaayega
+
+3️⃣ Switch / Navigate Branch
+
+👉 Ek branch se dusri branch par jaane ke liye:
+
+git checkout <branch-name>
+
+📌 Example:
+
+git checkout dev
+
+✔️ Ab tum dev branch par kaam kar rahe ho
+
+4️⃣ Create New Branch
+
+👉 Nayi branch create karne ke liye:
+
+git branch <new-branch-name>
+
+📌 Example:
+
+git branch feature-login
+5️⃣ Create + Switch (Shortcut)
+
+👉 Ek hi command me branch create + switch:
+
+git checkout -b <new-branch-name>
+
+📌 Example:
+
+git checkout -b feature-payment
+
+✔️ New branch create bhi hogi aur usme switch bhi ho jaayega
+
+6️⃣ Delete Branch
+
+👉 Branch delete karne ke liye:
+
+git branch -d <branch-name>
+
+📌 Example:
+
+git branch -d feature-login
+
+✔️ Branch delete ho jaayegi (agar merge ho chuki ho)
+
+🔹 Important Note
+Agar branch merge nahi hui hai aur force delete karna ho:
+git branch -D <branch-name>
+🔹 Final Summary
+git branch                 # check branches
+git branch -M main         # rename branch
+git checkout dev           # switch branch
+git branch feature-login   # create branch
+git checkout -b feature    # create + switch
+git branch -d feature      # delete branch

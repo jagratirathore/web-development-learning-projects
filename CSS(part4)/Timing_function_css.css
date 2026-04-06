@@ -1,0 +1,21 @@
+/* Timing function-(animation ko create krne ke liye hm transition ko use kr skte h)
+transition-timing-functions: linea-->linearly change ho rha h
+transition-timing-functions: ease-in-->dhere dhere change hoga
+transition-timing-functions: steps-->ek ek steps me change hoga 
+transition-timing-functions: cubic -->forward backward me change hoga esme  */
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color:lightcoral ;
+    /* center krne ka tarika hota h-ye left right se equal margin set ho jata h to automatic center me aa jata h 0 aotomatic(auto) */
+    margin: 0 auto;
+    margin-top:10px;
+    transition: margin-top 2s ease-in 0.2s;
+    /* ease-in (girne ka effect lgana ho kisi element pe to)-> ka timing h serf 0.2 seconds ho */
+}
+
+div:hover{
+    margin-top: 400px;
+    background-color: lightgray;
+}

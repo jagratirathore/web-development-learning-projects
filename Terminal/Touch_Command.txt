@@ -1,0 +1,18 @@
+// touch command:
+// Ye command new files create karne ke liye use hoti hai.
+
+// Example 1:
+// touch index.html
+// -> "index.html" naam ki ek HTML file create ho jayegi
+
+// Example 2:
+// touch app.js
+// -> "app.js" naam ki ek JavaScript file create ho jayegi
+
+// Example 3:
+// touch abc.txt
+// -> "abc.txt" naam ki ek text file create ho jayegi
+
+// Ek saath multiple files bhi bana sakte hain:
+// touch file1.txt file2.js file3.html
+// -> Ye ek hi command me 3 files create kar dega

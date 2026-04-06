@@ -1,0 +1,150 @@
+// Adding Information in URLs (Query Strings):
+
+// hmari APIs (jo URLs/endpoints hote h) me hm additional information
+// query string ke through bhej skte h
+
+// example:
+// jb hm browser me www.google.com likhte h to ek request server ko jati h
+// ab agar hm search me "apple" likhte h to URL change ho jata h:
+
+// https://www.google.com/search?q=apple
+
+// yha "?" ke baad jo part aata h use query string bolte h
+
+// q = key (query)
+// apple = value
+
+// yani hm key-value pair ke form me additional information bhej rhe h
+
+// hm direct URL me bhi likh skte h:
+// https://www.google.com/search?q=mango
+// → isse direct mango ka search page open ho jayega
+
+// agar space hota h to "+" ya "%20" use hota h
+// ex: q=harry+potter
+
+
+// Query String format:
+// ?key=value&key2=value2
+
+// examples:
+// ?name=jagrati&marks=95
+// ?city=indore&age=22
+
+
+// note:
+// APIs ke sath generally additional data pass krne ke liye
+// hm query strings ka use krte h
+
+
+// practical example:
+// harry potter API jisme movies/books ka data hota h
+// hm query string use krke specific data fetch kr skte h
+
+eshi dikhti h query string:
+https://www.google.com/search?q=harry(key)+poter(value)
+
+example-https://www.google.com/search?q=harry+poter
+?name=jagrati&marks=95
+//apis ke sath genrally additional information pass on krna hota to hm query string ka use krte h
+
+
+// practical example dekhte h: Harry Potter API
+// (iske pass Harry Potter ki movies aur books ka pura database hota h)
+
+// browser me ja ke Harry Potter API search kro
+// "Visit Docs" pr click kro → ye documentation hoti h jaha se hme API ke endpoints aur usage pta chalta h
+
+// example API URL:
+// https://api.potterdb.com
+
+// is URL ko copy karke Hoppscotch/Postman me run krenge request send krenge to
+// to  reponse me hme JSON format me data (response) mil jayega or us reponse me ek or link milegi usko phir se copy kr ke Hoppscotch pe send krenge to pura data mil jaayega us harry potter database ka api ke reponse me or differnet routes h usko copy kr kr ke paste kr ke or andr search kr skte h hm
+
+// correct endpoints:
+https://api.potterdb.com/v1/characters
+https://api.potterdb.com/v1/books
+https://api.potterdb.com/v1/movies
+
+json data aata h in the form of array or aaray ke andr object h or usme movie books sb ka data aata h
+
+//agr hmko particular movie ki detail chaiye to (/kr ke id deni hogi)
+https://api.potterdb.com/v1/movies
+eske reponse se id copy kr le url ke baad / kr ke copy paste krungi id to information aayegi particular movie ki,
+ex-https://api.potterdb.com/v1/movies/e7cb979b-d7f6-4758-882d-6bd0622aa831
+
+// agar hmare URL ke andar aisa likha hota h to iska mtlb ye variables h 
+// (id, num, q etc.) → inme valid values pass krni hoti h
+
+// example:
+// url/:id   → :id ko actual value se replace krenge (jaise 101)
+// url/:num
+// url/:q
+
+// ya kuch APIs me is type ka syntax bhi hota h:
+{{id}}
+<id>
+
+// mtlb same hi h → placeholder ko real value se replace krna hota h
+
+
+// ----------------------------
+// Query String samjhne ke liye example:
+
+// University API (GitHub pe available free API)
+// is API se country ke basis pr universities search kr skte h
+
+// base API:ye link ko copy paste browser pe bhi direct kr skte h or agr Hoppscotch pr krna h to browser pe ja ke phele krna then double click kr ke link pr https vaali link copy kr ke phir run krvana Hoppscotch pe to last me link ke baad / aayega or vo easily run ho jaati h Hoppscotch pe
+http://universities.hipolabs.com
+
+// query string example:
+http://universities.hipolabs.com/search?name=India
+
+// yaha:
+// ?name=India → query string h
+// key = name (constant hoti h)
+// value = India (change hoti h)
+
+// isse India ki sari universities ka data aa jayega ✔
+
+
+// aur examples:
+http://universities.hipolabs.com/search?name=Canada
+http://universities.hipolabs.com/search?name=Pakistan
+
+
+// multiple query params:
+http://universities.hipolabs.com/search?name=US&state=Delhi
+
+// yaha:
+// agar hm aisi value bhejte h jo API recognize nahi krti
+// to error zaruri nahi aayega (404 nahi aata)
+
+// API:
+// unknown ya invalid parameter ko ignore kr deti h
+// aur sirf valid data ke basis pr response deti h ✔
+
+
+// summary:
+// path variables (:id) → URL ke andar replace hote h
+// query string (?key=value) → additional info bhejne ke liye use hoti h
+// API sirf valid parameters ko hi process krti h
+
+or
+
+ //if hmare url ke andr agr esa likha hota h to eska mtlb ye variables h-id,num,q eske andr valid value pass krne ki jarurat h-
+example-directly apis ko route kiya or replace ki values ko valid value ke sath
+url/:id(:id ko valid value se replace krna h hmko jese id copy kr di hmne eski place pr)
+url/:num
+url/:q
+or
+{{id}}
+or
+<id>
+
+//query string : ko smjhne ke liye hm exapmle lenge university api ye gihub.com se random university api -contry ke basis pr college search kr skte ye h api h ye kisi ne bnai h
+http://university.hipolabs.com :ye api h
+http://university.hipolabs.com/search?name=India :/search?name=India (query string)-india ki saaari univerity ki list h aa jaayegi ese hi canada ,pakistan,nigeria  ese contry ke basis pr university ka data la skte h hm ,key constante hota h or value change hoti h
+http://university.hipolabs.com/search?name=US&state=Delhi :ye glt h us me india ka state to error 404 nhi aayega hmare pass same data aayega (agr key value me hmne esa data bheja jo api nhi smjhti(recognise nhi kr paati) to usko ignore kr deti or data to degi hi us ka bs state ignore kr degi) serf useful data ko recognise krti h apis
+
+//hmne phele dekha kese variable ke form me information pass kr skte h then hmne dekha ki kese hm additional information query sting ke through pass kr skte h url me or endpoints or apis me

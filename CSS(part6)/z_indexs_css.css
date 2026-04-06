@@ -1,0 +1,26 @@
+/* Z-index->(ye btata h ki webiste ke konsi chiz upr vaale level pe aayegi konsi niche pe) It decides the stack level of elements(1,2,3 box h to 1 or 3 dono same stack me aa rhe or 2 vaala box overlapp kr rha to vo 1 or 3 stack ke level upar usko 2 ko rakhenge apn
+Overlapping elements with a larger z-index cover those with a smaller one.
+z-index:auto(0)
+z-index:1/2/...(positive,upper)
+z-index:-1/-2/... (negative,lower)*/
+ 
+.box{
+    height: 150px;
+    width: 150px;
+    border:2px solid black;
+    background-color: pink;
+}
+
+.one{
+    background-color: aquamarine;
+    position: relative;
+    z-index: -1;
+}
+
+.two{
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+    z-index: 0;
+
+}

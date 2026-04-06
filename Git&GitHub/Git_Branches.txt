@@ -1,0 +1,98 @@
+🔹 Git Branches
+
+👉 Branch ka matlab:
+Project ka ek separate version / copy, jisme alag-alag developers independently kaam kar sakte hain.
+
+🔹 Main Branch (Default)
+main branch default branch hoti hai
+Isme final, stable aur tested code hota hai
+
+📌 Example:
+
+main → Final website (working & bug-free version)
+🔹 Development Flow (Hierarchy Example)
+        main
+         |
+        dev (senior developer)
+      /   |   \
+    d1   d2   d3   (developers)
+
+👉 Explanation:
+
+d1, d2, d3 → alag developers apni-apni branches par kaam karte hain
+Ye sab changes pehle dev branch me merge hote hain (review ke baad)
+Phir dev branch se main branch me final code merge hota hai
+
+✔️ Senior developer → dev branch manage karta hai
+✔️ Super senior → main branch me merge karta hai
+
+🔹 Why Use Branches?
+Different developers alag-alag kaam kar sakte hain
+Code conflict kam hota hai
+Collaboration easy ho jaata hai
+Proper hierarchy & access control maintain hota hai
+
+📌 Example:
+
+Frontend developer → UI par kaam kare
+Backend developer → server/database par kaam kare
+👉 Dono ek dusre ka code directly disturb nahi karte
+🔹 Types of Branches (Examples)
+1️⃣ main
+
+👉 Final production code
+📌 Example:
+
+main → Live website
+2️⃣ dev (Development Branch)
+
+👉 Testing + integration ke liye use hoti hai
+📌 Example:
+
+dev → sab developers ka combined code (testing phase)
+3️⃣ feature Branch
+
+👉 New feature add karne ke liye
+
+📌 Example:
+
+feature-login → login system banana  
+feature-button → new button add karna
+4️⃣ bugfix Branch
+
+👉 Bugs fix karne ke liye
+
+📌 Example:
+
+bugfix-login-error → login error fix karna
+🔹 Merging Branches
+
+👉 Do branches ke code ko combine karna = merge
+
+📌 Example Flow:
+
+feature-button → dev → main
+Pehle feature branch ka code dev me merge hota hai
+Testing ke baad dev ka code main me merge hota hai
+🔹 Real-Life Example
+
+👉 3 developers apni-apni branch banate hain:
+
+feature-login   (Developer A)
+feature-payment (Developer B)
+bugfix-navbar   (Developer C)
+
+✔️ Sab apna kaam alag-alag karte hain
+✔️ Phir sabko merge karke final project banaya jaata hai
+
+🔹 Important Note
+Branching se development fast & safe hota hai
+Har developer apni branch me kaam karta hai
+Final code hi main branch me jaata hai
+🔹 Simple Summary
+main → final code  
+dev → testing code  
+feature → new feature  
+bugfix → error fix  
+
+Agar chaho to mai branching ka diagram + commands (git branch, checkout, merge) bhi exam-ready format me bana dungi 👍

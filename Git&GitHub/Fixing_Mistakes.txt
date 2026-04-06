@@ -1,0 +1,108 @@
+#Fixing Mistakes:
+Case 1: staged changes
+        git reset <-file name->
+        git reset
+
+Case 2: commited changes (for one commit)
+        git reset HEAD~1
+
+Case 3: commited changes (for many commits)
+        git reset <-commit hash->
+        git reset -- hard <-commit hash->
+
+
+or
+
+
+
+🔹 Fixing Mistakes in Git
+🟢 Case 1: Staged Changes (Added but NOT committed)
+
+👉 Agar tumne galti se file git add kar di ho:
+
+git reset <file-name>
+
+📌 Example:
+
+git reset app.js
+
+✔️ File staging area se hat jaayegi (unstaged ho jaayegi)
+
+👉 Sab files ko unstage karne ke liye:
+
+git reset
+🔹 Example Flow
+git status
+git add .
+git status   # mistake file bhi add ho gayi
+git reset app.js
+git status   # ab file "modified" me dikhegi
+🟢 Case 2: Last Commit Undo (1 commit)
+
+👉 Agar tumne galti se commit kar diya:
+
+git reset HEAD~1
+
+✔️ Last commit remove ho jaayega
+✔️ Changes wapas working directory me aa jaayenge
+
+📌 Example:
+
+git reset HEAD~1
+🟢 Case 3: Multiple Commits Undo
+
+👉 Agar multiple commits hatane ho:
+
+git reset <commit-hash>
+
+📌 Example:
+
+git log   # commit hashes dekhne ke liye
+git reset a1b2c3d
+
+✔️ Is commit ke baad wale saare commits remove ho jaayenge
+
+🔴 Hard Reset (Dangerous ⚠️)
+git reset --hard <commit-hash>
+
+📌 Example:
+
+git reset --hard a1b2c3d
+
+✔️ Code us commit par chala jaayega
+❌ Saare baad ke changes permanently delete ho jaate hain
+
+🔹 Real Scenario Example
+👉 Situation:
+Tumne galti se unnecessary changes add kar diye
+git add .
+git status
+
+👉 Fix:
+
+git reset app.js
+👉 Situation:
+Tumne galti se commit bhi kar diya
+git commit -m "wrong commit"
+
+👉 Fix:
+
+git reset HEAD~1
+👉 Situation:
+Last 2 commits remove karne hain
+git reset HEAD~2
+👉 Situation:
+Specific commit tak wapas jaana hai
+git log
+git reset --hard <commit-hash>
+🔹 Important Notes
+git reset → safe (changes wapas mil jaate hain)
+git reset --hard → dangerous (data loss ho sakta hai)
+Use carefully ⚠️
+🔹 Final Summary
+git reset <file>        # unstage file
+git reset               # unstage all
+git reset HEAD~1        # undo last commit
+git reset HEAD~2        # undo last 2 commits
+git reset <hash>        # go to specific commit
+git reset --hard <hash> # delete all changes (danger)

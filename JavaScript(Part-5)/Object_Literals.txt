@@ -1,0 +1,14 @@
+JS Object Literals:-USed to store collections & complex entities.
+Note-property=>(key,value)pair
+    ~Objects are a collection of properties.
+
+Example-student(object):-or key ki halp se hm hmaari value ko access kr skte h like chabi h ye,student ke pass 3 properties h,it have multiple key value collection(bhut saari property ho uske andr) like-
+
+name     "shradha"    ->name or shradha ke combination ko bolenge,ese hi sb ko bolenge-q ki key or value ek dusre se associated h,property1
+age       23          ->property2
+marks     94.4        ->property3
+ |         |
+ key      value
+
+
+Note-object literals ko  prefer krte h hm complex data store krvaane ke liye JS

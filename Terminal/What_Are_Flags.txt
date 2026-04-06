@@ -1,0 +1,29 @@
+// Flags:
+// Flags wo characters hote hain jo hum commands ke saath use karte hain
+// taaki unka behavior modify ya control kiya ja sake.
+
+// Manual Command (help dekhne ke liye):
+// man ls
+// -> ls command ke baare me detailed information deta hai ese sb ki de dega 
+
+// man mkdir
+// -> mkdir command ke baare me detailed information deta hai
+
+// With Flags (examples):
+
+// ls
+// -> Current directory ki files/folders ki simple list show karta hai
+
+// ls -l(list in long format)
+// -> Detailed list show karta hai (permissions, size, date, etc.)
+
+// ls -a
+// -> Hidden files (.) aur (..) bhi show karta hai
+
+// ls -la
+// -> Detailed list + hidden files dono show karta hai
+
+// mkdir -v folder1
+// -> Folder create hone par message show karta hai (verbose mode)
+
+manual se bhar niklne ke liye : quit 

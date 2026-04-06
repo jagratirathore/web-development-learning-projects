@@ -1,0 +1,99 @@
+What is Forking?
+A fork is a new repository that shares code and visibility settings with the original "upstream" repository.
+
+Fork is a rough copy.
+
+or
+
+🔹 What is Forking?
+
+👉 Forking ka matlab hota hai kisi aur ke GitHub repository ki copy apne GitHub account me banana
+
+✔️ Ye ek new repository hoti hai
+✔️ Ye original (upstream) repository se connected rehti hai
+
+📌 Definition:
+
+A fork is a new repository that is created from an existing repository and shares its code and visibility settings.
+
+🔹 Simple Meaning
+
+👉 Fork = Rough Copy / Duplicate (on GitHub account)
+
+Tum kisi aur ka project directly edit nahi kar sakte
+Isliye tum uska fork bana ke apne account me copy kar lete ho
+Fir usme changes kar sakte ho
+🔹 Example (Easy Understanding)
+
+👉 Suppose kisi ne GitHub par Node.js project banaya hai
+
+Tum us repo ko open karte ho
+Tumhe Edit option nahi milega ❌
+👉 Kyunki wo tumhara project nahi hai
+🟢 Solution: Fork
+
+👉 Tum Fork button par click karte ho
+
+✔️ Result:
+
+Same repository tumhare GitHub account me copy ho jaati hai
+Same ya different name choose kar sakte ho
+
+📌 Example:
+
+Original Repo: nodejs-project
+Forked Repo:   jagrati/nodejs-project
+🔹 Fork ke baad kya kar sakte ho?
+
+✔️ Code edit kar sakte ho
+✔️ Files change kar sakte ho (e.g., README.md)
+✔️ New features add kar sakte ho
+
+📌 Example:
+
+Edited by Jagrati Rathore
+🔹 Pull Request (Fork ke baad)
+
+👉 Agar tum apne changes original project me add karna chahte ho:
+
+✔️ Tum Pull Request (PR) create karte ho
+
+📌 Meaning:
+
+Tum request bhejte ho original repo ke owner ko
+Wo check karega (review)
+Agar sahi laga → merge kar dega
+🔹 Important Points
+Fork → GitHub par hota hai (local nahi)
+Fork ke baad hi tum dusron ke project me contribute kar sakte ho
+Ye open-source contribution ka main process hai
+🔹 Real-Life Analogy
+
+👉 Fork = Rough Copy
+👉 Original Repo = Fair Copy
+
+✔️ Tum rough copy me changes karte ho
+✔️ Fir final changes original me bhejte ho (PR ke through)
+
+🔹 Final Summary
+Fork → Copy repository to your GitHub account  
+Edit → Make changes  
+Pull Request → Send changes to original repo  
+
+Agar chaho to mai Fork vs Clone vs Branch ka difference bhi bana dungi (exam + interview ke liye very important 👍
+
+or 
+
+//github pe kisi ne project bnaaya to ,ab hm apne project ko to fork nhi krte but let's suppose kisi or ne project bnaya to node ki repositry gihub pe search kr skte h pr hm esko changes nhi kr skte h hm changes nhi kr skte h node ki h to edit option nhi h esme to fork krte h hm copy lana apne account pr 
+fork -pr click krne se hm apne account ke andr nai repository bnayenge same ya differnet name ke hmare pass do option hote h ya to pura copy kr skte code(copy the) ya main brach only ka la skte code purani repo se hmari repo me copy ho jaayega node hi name diya tha hmne bhi delta ke and node me pura data copy ho jaayega 
+or uske badd edit kr skte h kuch bhi hm readme.md ke and or pull request bhi nai create kr skte h 
+
+hm chahte h delta student tha usme main brach ke andr hm hmare node js  ki official repo h uske sath merge krna 
+hmne changes kiye read.md me Edited by jagrati 
+es change ko node ke sath change krna chahte hai pull request hm kisi or ke code ko bhi merge krne ke liye krte h/
+
+fork-it means hm apni khud ka koi clone ya duplicate bna skte h,jiske andr hm rough copy krte h or jo hmari final file hoti usme fair copy kr dete h
+
+//saare project ko github pe hm daalenge
+//or apne dosto ki github account pe ja ke fork bhi kro unke projects ko 
+

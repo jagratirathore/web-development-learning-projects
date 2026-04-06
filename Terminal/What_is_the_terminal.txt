@@ -1,0 +1,22 @@
+// The Terminal: A text-based input and output environment used to interact with the computer.
+
+// Mouse ke through hum easily new folder/file bana sakte hain,
+// but terminal me basic commands type karke same kaam bahut fast ho jata hai.
+// Isliye mouse ke comparison me terminal zyada efficient hota hai.
+
+// Note: Programmer ke liye terminal use karna bahut useful hota hai.
+
+// Advantages of Terminal:
+// 1) Aage chal kar hum Node.js ke bahut saare packages terminal se install karenge.
+// 2) Git (version control system) ko bhi terminal ke through use karenge.
+// 3) Programming me speed badh jati hai kyunki mouse par depend nahi rehna padta.
+// 4) Terminal directly system se interact karta hai:
+//    - Hidden files dekh sakte hain
+//    - System level details access kar sakte hain
+//    - Efficiency aur speed dono improve hoti hain
+
+// Example:
+// Windows Explorer me hidden files normally nahi dikhte,
+// but terminal me commands use karke dekh sakte hain:
+// ls -a   (Linux/Mac)
+// dir /a  (Windows)

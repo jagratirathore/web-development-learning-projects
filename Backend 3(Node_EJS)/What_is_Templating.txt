@@ -1,0 +1,2 @@
+Templating: EJS(Embedded JAvascript templates)
+EJS is a simple templating languauge that lets you generate HTML markup with plain JAvascript.

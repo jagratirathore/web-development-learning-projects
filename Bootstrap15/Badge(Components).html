@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Badge(Components)_css.css">
+
+</head>
+<body>
+
+    <!-- agr meko notification ke liye 10+ emial btana h to me bna skti eska badge -->
+    <div>
+        <span class="badge bg-secondary">10+</span>
+    </div>
+
+    <!-- or bootstrap se copy bhi kr skti -->
+    <h3>Notifications<span class="badge text-bg-danger">100+</span></h3>
+
+    <!-- button (followers ) ke andr hi chaiye meko  badge(50+) to(ye type kiya h bootstrap se ja ke copy paste bhi kr shte h) -->
+     <button class="btn btn-primary">Followers<span class="badge text-bg-danger">50+</span></button>
+
+     <!-- positioned-bhi kr skte h site pe mil jaayega (mtlb niche lable or uske upr kitne notification aaye vo) ,ye copy paste kiya h bootstrap ki site se-->
+      <button type="button" class="btn btn-primary position-relative">
+      Inbox
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      99+
+       <span class="visually-hidden">unread messages</span>
+       </span>
+      </button>
+
+      <!-- badge ke sahpe bhi change kr skte h rounded me vgera -->
+       <h5><span class="badge rounded-pill text-bg-success">Rounded Badge</span></h5>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+//sb se phele GITDEMO name se folder banyenge 
+//then vs code ke footer me bootm left me kuch option dikhai denge X vaalya or triablge shape 0 kr ke usko click krenge to problems output terminal debug console aayega
+//uske baad hm terminal pe click kr ke ls:list dekh skte hai,pwd:se print working directry bhi dekh skte h hmari local machine ke andr(hmara laptop)or jo terminal me kr skte the vo hm yaha bhi kr skte hai
+//git --version: git version aa jaayega access kr lenge hm git ko
+git config --list: saari detail aa jaayegi then clear kr denge
+//yaha pe hm code or git and github vaale part ko collborate krenge
+
+or
+
+// Sabse pehle "GITDEMO" naam ka ek folder banayenge
+
+// VS Code open karne ke baad bottom panel me options dikhte hain:
+// Problems, Output, Terminal, Debug Console
+// Terminal open karne ke liye "Terminal" par click karein
+
+// Terminal me basic commands use kar sakte hain:
+ls    → files/folders ki list dekhne ke liye  
+pwd   → current working directory (location) dekhne ke liye  
+
+// Ye sab hamari local machine (laptop) par run hota hai
+// Jo commands hum normal terminal me karte hain, wahi yahan bhi kar sakte hain
+
+// Git check karne ke liye:
+git --version  
+// Isse Git ka version show hoga (matlab Git installed hai)
+
+// Git configuration details dekhne ke liye:
+git config --list  
+
+// Screen clean karne ke liye:
+clear
+
+// Yahan par hum VS Code ke through Code + Git + GitHub ko collaborate karte hain
+// (code likhna + version control + GitHub par upload)

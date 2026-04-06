@@ -1,0 +1,4 @@
+Implement: PATCH/posts/:id
+
+UPDATE Route
+PATCH     /posts/:id      to update specific post

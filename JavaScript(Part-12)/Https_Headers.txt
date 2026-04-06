@@ -1,0 +1,59 @@
+// headers ke form me bhi hm additional data bhejte h API request me
+
+// example:
+// browser me google.com open karo
+// Inspect → Network tab me jao
+
+// initially koi request nahi dikhegi
+// jaise hi search bar me "mango" search kroge
+// bhut saari requests Network tab me dikhne lagenge
+
+// ab kisi ek request pe click kro
+// waha hme "Headers" section milega
+
+// headers me 2 type hote h:
+// 1) Request Headers  → jo client (browser) server ko bhejta h
+// 2) Response Headers → jo server hme wapas bhejta h
+
+// Request Headers me:
+// jitni bhi information client side se jati h wo hoti h
+// jaise: authority, path, user-agent, etc.
+// isme system/browser related info bhi hoti h
+// (kis device se request gai, konsa browser h, etc.)
+
+// Response Headers me:
+// server ki taraf se aayi info hoti h
+// jaise: content-type, status, server info, etc.
+
+
+// practical example:
+// Dad Jokes API use krte h:dad joke api browser me daal ke get api ki link dhundenge or copy kr ke paste krenge Hoppscotch me
+
+
+// kuch APIs me hme specific header bhejna padta h
+// jaise:
+// Accept: application/json
+
+// tabhi hme JSON format me response milta h
+
+
+// format of headers:
+// header-name : value
+
+// example:
+Accept: application/json
+Content-Type: application/json
+
+
+// Note:
+// headers = metadata (data about data)
+// yani request/response ke bare me extra information
+//ye reponse html me aa rha-https://icanhazdadjoke.com/ then agr hmara reponse json me chaiye to apis se to hm header me ja ke conten-type me ja kr value change kr denge  upr jo header me ja ke header1 me type krenge Accept  or  value me type krenge application/json to hmare pass json data({
+  "id": "mOR7h392TCd",
+  "joke": "Why are basketball players messy eaters? Because they are always dribbling.",
+  "status": 200
+}) aayega reponse me ab
+
+or agr plain text chaiye to upr vaale header me ja ke + ko click kr ke add krenge header1 pe Accept likhenge or value me  text/plain then send to reponse hmare pass plain text me aayega reponse me raw data milega-I’ve got this disease where I can’t stop making airport puns. The doctor says it terminal.
+
+note:generally hm header ke sath meta data(it means that data about data) bhi bhete h data ke baare me additional information.

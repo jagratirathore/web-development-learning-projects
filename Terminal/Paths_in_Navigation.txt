@@ -1,0 +1,26 @@
+// Paths: Absolute & Relative
+
+// Relative Path:hmesha name ke sath suru hote h
+// Ye current location ke respect me path batata hai.
+// Example:
+// cd Desktop/Delta
+// (Yani current directory se Desktop ke andar Delta folder me jana)
+
+// Absolute Path:hmesha / ke sath suru hote h
+// Ye root directory se pura complete path batata hai.
+// Example:
+// cd /Users/jagratirathore/Desktop
+// (Yani directly root se start hoke exact location tak jana)
+
+// / (root directory):
+// Ye system ki sabse top-level directory hoti hai.
+// Saare folders isi ke andar hote hain.
+// Example:
+// cd /Users
+
+// ~ (home directory):
+// Ye current user ki home directory ko represent karta hai.
+// Example:
+// cd ~           -> Home directory me le jata hai
+// cd ~/Desktop   -> Home ke andar Desktop folder me le jata hai
+// cd ~/Downloads -> Home ke andar Downloads folder me le jata hai

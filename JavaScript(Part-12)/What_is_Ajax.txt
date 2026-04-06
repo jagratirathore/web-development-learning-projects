@@ -1,0 +1,26 @@
+// AJAX: full form is Asynchronous JavaScript and XML
+
+// ye basically ek pura process/technique h jiske through hm API ko call krte h 
+// or phir response me data milta h, ye saara process asynchronous hota h
+
+// JS --{request}--> API (server) --{response (JSON/XML)}--> wapas JS
+
+// asynchronous ka mtlb h ki request bhejne ke baad code wait nhi krta,
+// baaki ka kaam chalta rehta h or jab response aata h tab handle hota h
+
+// APIs ko call bhejte h or APIs response deti h, isi process ko AJAX bolte h
+
+// asynchronous esliye h kyuki agar bich me delay ya issue aaye,
+// to ye pura system usko manage kr leta h bina page ko roke
+
+// asynchronous ki vjha se pura webpage reload nhi hota,
+// sirf required data update hota h
+
+// example: instagram pe like krne pr page reload nhi hota,
+// sirf like update hota h (ye AJAX ka use h)
+
+// jb hmara response JSON me aa rha h fir bhi hm ise AJAX hi bolte h,
+// kyuki AJAX ek technique ka naam h, format (JSON/XML) ka nhi
+
+// pehle XML use hota tha isliye naam AJAX pad gaya,
+// ab JSON use hota h fir bhi naam AJAX hi chalta h (convention)

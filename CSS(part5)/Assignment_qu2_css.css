@@ -1,0 +1,25 @@
+/* Q2-Re-create the following layout using flexbox as closely as possible:
+logo Home About Contact
+
+-Take the container height & width as(50px,900px) & child height & width as(50px , 80px).
+-USe font-size as 24px. */
+
+#parentbox{
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+#parentbox div{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    display: inline-block;
+    padding-top: 8px;
+}

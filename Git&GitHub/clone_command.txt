@@ -1,0 +1,121 @@
+🔹 Basic Git Commands
+
+clone → Repository ko local machine par copy karna
+
+git clone <repository-link>
+
+status → Code ki current state (changes, modified files, etc.) dikhata hai
+
+git status
+🔹 What is Clone?
+
+👉 Clone ka matlab: copy ya duplicate banana
+
+Jab hum GitHub par koi repository bana lete hain, wo online (GitHub) par hoti hai, lekin hamare local system (laptop) me nahi hoti.
+Agar hum us repository ko apne system me lana chahte hain, to hum clone karte hain.
+
+✔️ Matlab:
+
+Online repo waha rahegi hi
+Aur uski ek copy hum apne system me le aate hain
+
+📌 Example:
+Jaise Instagram se photo download karke apne system me lana → same concept = clone
+
+🔹 Steps to Clone a Repository
+GitHub par apni repository open karo
+Code button par click karo
+3 options milte hain:
+HTTPS
+SSH
+GitHub CLI
+
+👉 Beginners ke liye HTTPS best aur simple hota hai (recommended)
+
+HTTPS link copy karo
+VS Code me apna folder (e.g., GITDEMO) open karo
+
+Terminal me command likho:
+
+git clone <paste-link-here>
+
+✔️ Cloning ke baad ek new folder (e.g., delta-demo) create ho jaayega
+
+🔹 Check Files After Cloning
+ls
+Isse tumhe cloned files dikh jaayengi
+Jo file GitHub par thi (e.g., README.md), wo ab local system me bhi hogi
+🔹 Navigate Inside Repository
+cd delta-demo
+ls -a
+ls -a → hidden files bhi show karta hai
+Yahan tumhe .git folder milega
+
+👉 .git folder important hota hai
+
+Ye sirf Git repositories me hota hai
+Ye proof hai ki folder Git-controlled hai
+🔹 Why We Use Clone?
+
+👉 Clone ka main reason:
+
+Project me changes / updates karna
+Local system par kaam karke phir GitHub par update karna
+🔹 Making Changes in Files
+VS Code me README.md file open karo
+Niche content add karo:
+# Teacher
+Shradha Khapra
+
+# Student
+Delta Student
+
+👉 # use karne se text bold/heading ban jata hai (Markdown)
+
+Changes save karo (Ctrl + S)
+🔹 File Status After Changes
+VS Code me README.md ke aage M (Modified) dikhai dega
+File ka color white se yellow ho jaayega
+
+👉 Iska matlab:
+
+File me changes ho chuke hain
+Lekin abhi Git me save (commit) nahi hua
+
+📌 Important:
+Git me sirf file change karna enough nahi hota
+👉 add aur commit bhi karna padta hai
+
+🔹 Adding More Files
+delta-demo folder ke andar new files create ki:
+index.html → ! + Enter se boilerplate code
+style.css
+🔹 Important Note
+
+👉 Git ka use karte time hum terminal me commands type karte hain
+👉 Aur Git files normal files se different hoti hain (tracking + version control)
+
+or
+
+Basic Commands:
+~clone: Closing a repository on our local machine     (git clone <-some link->)
+~status: displays the state of the code  (git status)
+
+clone:it means copy or duplicate,clone krne ka mtlb h jb bhi hmne repo bna li git hub pe or bna li repo jo account pe dikh rhi h github pe pr system(local machine/hmare lptop me nhi dikh rhi or hm chahte h usko local system me laaye to hm clone krte h mtlb online to rhegi hi)or usko download kr ke system ke andr copy le ke aayege example: instagram pr photo ko download kr ke system ke andr le aana to usko clone hi bolenge 
+git clone ke baad link paste krna ab link paste konsi krenge github pe jaayenge code pe click krenge to 3 options aate h https ssh github cli
+to hm use krenge https(q ki ye hi git reccomend krta h or it is very simple to use beginners) then click krenge https pe or us link ko copy kr ke hm apne vs me aayenge  or jis folder me copy krana h GitDemo me to usme tem pe vo khula hona chaye folder (GitDemo ~ git clone link) git clone ke baad link paste kr denge then cloning ho jaayegi or the delta-demo kr ke aa jaayega folder 
+ls kr kdekhenge terminal peor jo hmne github pe readme.md create ki thi vo vs me bhi dikha jaaygei hmko hmare system pr
+
+//git mtlb commands hi type kr rhe hote hm hmare terminal pe
+//ab cd delta-demo ke and chle jaayenge (ls -a): kr ke hidden file dekhenge:always hidden folder me .git name ka ek folder hota hi h ye serf git files me dikhega normal folder me nhi dikhega git files me hi dikhega jo ki phechan h  ki git files ke sath hm kaam kr rhe h
+//abhi hmne clone command se project ko clone kr liya clone ka ek hi reason hota h ki hm hmare project me updation or changes kr rhe esliye hm clone krte h
+
+//ab hm read me file me hi vs code me ja ke changes krenge This is a Demo for Git &amp; Github class ke niche hi likhenge vs me hi (#(ye likhne se highlight hoti h bold me ho jaati readme me) Teacher
+Shradha Khapra
+
+#Student
+Delta Student
+
+ye changes kiye hmne or ctrl + s se save kiye hmne changes then README.md ke aage dekho M likha aa jaayega or jo phele white me dikh rhi thi ab yellow ho gai to vs code ye kr ke dikha rha h ki git file ko change kr ke modifiy(M) kr diya h or ye ke vs code bta rha ki git normal file nhi hoti h usme add commit bhi krna hota h vo bhul mt jana -or eshi ke andr  delta-demo folder me hi hmne do files bnaai h index.html-esme !+enter kr ke boilerplate code bhi daal diya or style.css
+
+

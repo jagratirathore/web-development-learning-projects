@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Arrow_Functions.js"></script>
+</body>
+</html>
+<!--
+# Arrow Functions (=>)
+
+Arrow function ES6 me introduce hua.
+Ye normal function ka shorter aur compact version hota hai.
+
+Arrow function ko hum variable ki value ke roop me store karte hain.
+Ye ek function expression ka modern version hai.
+
+Syntax:
+const functionName = (arg1, arg2) => {
+    // function body
+}
+
+~ Example: Arrow Function
+const sum = (a,b) => {
+    console.log(a + b);
+}
+
+~ Example: Normal Function
+function sum(a,b){
+    return a + b;
+}
+
+---------------------------------------------
+
+# Higher Order Function
+
+Jab koi function kisi dusre function ko argument me accept kare
+ya function return kare, use Higher Order Function kehte hain.
+
+# Callback Function
+
+Jo function kisi dusre function me argument ke roop me pass hota hai,
+use Callback Function kehte hain.
+
+Example:
+const numbers = [1,2,3,4];
+
+numbers.map(function(num){
+    return num * 2;
+});
+
+Arrow version:
+numbers.map(num => num * 2);
+
+---------------------------------------------
+
+Note:
+• Arrow functions usually nameless (anonymous) hote hain.
+• Inka apna `this` nahi hota.
+• Constructor ke roop me use nahi kar sakte.
+-->

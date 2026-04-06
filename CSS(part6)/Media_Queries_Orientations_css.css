@@ -1,0 +1,29 @@
+/* Media Queries-(portrait,landscape)orientation (of viewport)
+
+@media(orientation:landscape){
+    div{
+        background-color:red;
+    }
+} */
+
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+ }
+
+ @media(width:400px){
+    h1{
+        background-color: red;
+        color: white;
+    }
+}
+
+@media(orientation:landscape){
+    h1{
+    background-color: aquamarine;
+    color: brown;
+    }
+
+    /* inspect kr ke rotate kr ke dekho landscape me ho jaayega changes smjh aayenge */
+    
+}

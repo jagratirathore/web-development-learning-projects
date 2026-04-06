@@ -1,0 +1,12 @@
+How to use bootstrap in our project:-
+generally hm download kr ste h jb bhi hm ko bootstrap chaiye ho hmaare project me or easy or fast ek or tareka hota h bootstrap ko include krne ka vo h simply link add kr lo hmaare project me CDN links me do link di h ek css ka or ek javascript ka,
+~css vaale link ko copy kr le head me paste krenge -likenge <link href ="link copy krenge"or eske sath likhenge rel="stylesheet"/> 
+stylesheet esliye likenge q ki css me prebuilt stylesheethoti h css ki free me.
+~js:javascript ki link ko bhi copy krlenge q ki vo extra functionality deta h ex-navbar me drop down create krna ,to hm js ko body tag ke phele script tag ke andr include krenge <script src="copy link"/>
+
+
+cdn=content delivery network(ye computers ka  network hota h ex-india me hmare multiple place pe server ho like ek mumbai,ek banglore,ek delhi or agr hm pune me bethe h to vo check krega ki sb se nearest server kona h jese mummbai vaala pass h to data vha se response krega or content deliver hoga es se ye hota h fast delivery milti h,time km lgta h,website fast animation vgera btati)
+Note:Bootstrap ki files hmari cdn ke through deliver hoti h
+
+utube chlaate h -video dekhte h vo bhi cdn setupr h 
+instagram-bhi cdn setup h us ke hi through hm photos vgera reels vgera dekhte h ye sb content delivery network hi h 

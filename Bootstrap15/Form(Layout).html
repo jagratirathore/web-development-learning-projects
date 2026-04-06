@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Badge(Components)_css.css">
+</head>
+<body>
+
+        
+    <!-- mb-3->(margin,bottom 4-space 1),Spacing me ja ke check kr lo bootstrap ki website pe pta chl jaayega,defult margin h already styling add ho ke aayegi esme -->
+    <div class="container">
+        <h2>Form Demo</h2>
+        <!-- form(layout)-(dono ko class="row de denge"or second div me col de denge)it means hm 50% width me kr denge email ko,or 50% width password ko =100%(or jb hm hmari website ki screen ko middium krenge to vo ek form me vaaps change ho jaayega to hm (md-6 lenge)) -->
+        <form>
+        <div class="row">
+        <div class="mb-3 col-md-6">
+        <label class="form-label" for="Email">Email</label>
+        <input type="text" class="form-control" placeholder="Email" id="Email">
+    </div >
+    <br>
+
+    
+        
+        <div class="mb-3 col-md-6">
+        <label class="form-label" for="Password">Password</label>
+        <input type="password" class="form-control" placeholder="Password" id="Password">
+    </div>
+
+    
+    <br>
+
+    
+        <div class="mb-3">
+        <label class="form-label" for="Address">Address</label>
+        
+        <!-- Form-control-lg->(From ko large krna),Form-control-sm->(From ko small krna) -->
+         <input type="text" class="form-control-sm" placeholder="Address" id="Address">
+    </div>
+     <br>
+
+
+    <!-- Select in form -->
+   
+    
+        <div class="mb-3">
+        <select class="form-select">
+            <!-- ek chiz by default selected hi rhegi then hm use kr skte h-selected (disabled bhi kr skte h agr hmko nhi chaye dropdown to or agr hm small krna chahte to vo bho kr skte h)-->
+             <option selected>Choose Your city</option>
+            <option >Indore</option>
+            <option>Goa</option>
+            <option>Patna</option>
+            <option>Raipur</option>
+            <option>Gandinagar</option>
+            <option>Kelara</option>
+        </select>
+    </div>
+    <br>
+
+    <!-- normal css-Checkbox -->
+
+        <div class="mb-3 "></div>
+        <label for="agree" >Agree</label>
+        <input type="checkbox" id="agree">
+    </div>
+    
+    
+
+    <!--  bootstrap css -Checkbox -->
+     
+        <div class="mb-3 form-check">
+        <label for="agreebs" class="form-check-label">Agree</label>
+        <input type="checkbox" id="agreebs" class="form-check-input">
+    </div>
+
+    <!--  bootstrap css -Radio button -->
+     
+        <div class="mb-3 form-check">
+        <label for="radiobs" class="form-check-label">Yes/No</label>
+        <input type="radio" id="radiobs" class="form-check-input">
+    </div>
+    <br>
+
+    <!-- switches-bhi bna skte h hm -(form-switch)-->
+  <div class="form-check form-switch container mb-3">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+  <label class="form-check-label" for="switchCheckDefault">Default switch checkbox input</label>
+</div>
+</form>
+    
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

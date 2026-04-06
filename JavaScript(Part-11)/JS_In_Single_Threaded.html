@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JS_In_Single_Threaded.css">
+</head>
+<body>
+    <script src="JS_In_Single_Threaded.js"></script>
+</body>
+</html>
+
+<!-- 
+Generally programming languages do types ki hoti hain:
+1. Single-threaded
+2. Multi-threaded
+
+👉 JavaScript is Single-threaded:
+- JavaScript ek time par sirf ek hi task execute karti hai
+- Code line by line execute hota hai (first line → next line → next line)
+- Isliye ise single-threaded language kehte hain
+- Ek hi "thread" (execution path) hota hai jisme poora code run hota hai
+
+👉 Problem:
+Agar JS API call kare aur server response na de (delay ho jaye),
+to kya JS wait kare?
+❌ Agar JS wait karegi to pura program ruk jayega (UI freeze ho jayega)
+
+👉 Solution: Asynchronous behavior
+
+👉 Synchronous Nature:
+- Code ek ke baad ek execute hota hai
+Example:
+console.log("A");
+console.log("B");
+console.log("C");
+// Output: A B C
+
+👉 Asynchronous:
+- JS wait nahi karti, background me kaam hota hai
+- setTimeout, API calls, etc.
+
+Example:
+setTimeout(function () {
+    console.log("Apna College");
+}, 2000);
+
+console.log("Hello...");
+
+// Output:
+// Hello...
+// (2 sec baad) Apna College
+
+👉 setTimeout kaise kaam karta hai?
+
+- JS setTimeout ko browser ko de deta hai
+- Browser timer start karta hai (JS wait nahi karti)
+- JS next code execute kar deti hai
+- Jab time complete hota hai, browser callback ko call stack me bhejta hai
+- Phir JS usse execute karti hai
+
+👉 Important:
+JS wait nahi karti, browser wait karta hai
+
+👉 Question:
+Agar JS single-threaded hai to multiple setTimeout kaise run hote hain?
+
+Answer:
+- JS sirf unhe register karti hai
+- Browser unka timer handle karta hai
+- Time complete hone ke baad callbacks queue me aate hain
+- Phir ek-ek karke execute hote hain
+
+Example:
+setTimeout(() => console.log("1"), 2000);
+setTimeout(() => console.log("2"), 2000);
+
+Output:
+1
+2
+
+👉 Note:
+- Dono 2 sec baad aate hain
+- Jo pehle likha hai wo pehle execute hota hai
+
+👉 Conclusion:
+- JS single-threaded hai
+- Synchronous + Asynchronous dono support karti hai
+- Asynchronous ke liye browser + event loop help karta hai
+-->

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Map_&_Filtter.js"></script>
+</body>
+</html>
+<!-- #Map(hr element ke liye return value ko new array me store krega):
+ → Har element par function run karta hai.
+→ Return value ko new array me store karta hai.
+→ New array ka size original array ke equal hota hai.
+→ Original array change nahi hota.
+//or
+bhut similar hota for each function ke bs difference kya hota h dono ke bich-(same ek-ek value return kr ke new arr same size ka bnata h)
+let newArr = arr.map(some function definition or name);
+Example:
+let num = [1,2,3,4];
+let double = num.map(function(el){
+    return el*2;
+}); 
+
+#Filter(Condition check karta hai.
+→ Agar condition TRUE ho to element new array me add hota hai.
+→ Agar FALSE ho to skip ho jata hai.
+→ New array return karta hai.)
+//or
+hme ek naya array return kr ke deta h ,jb esko run krenge or callback true deta to newarray me add krte element or agr false deta to hm us element ko add nhi krte new array me
+let newArr = arr.filter(Some function definition or name);
+Example:
+let nums = [2,4,1,5,6,2,7,8,9];
+let even =nums.filter((num)=>(num%2==0));
+-->

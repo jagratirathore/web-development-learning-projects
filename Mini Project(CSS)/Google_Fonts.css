@@ -1,0 +1,20 @@
+/* Google Fonts-library of fonts(jisme hmaare pass bhut saare free fonts available hote h jisko hm kisi bhi website ko built krne ke liye use kr skte h ),arround 1513 different fonts available h hmaare pass google fonts me jisme hm hmaare text ko likh skte h or website ke upr use kr skte h
+# web page visit- https://fonts.google.com *
+-es website me ja ke hm differnet fonts search kr rkte h or freely use kr skte h apni website pe  jese-
+~search fonts-search kr skte h
+~custom-text likh ke dekh skte ki us font me jo or bhaaki sb font me bhi jo niche available ho, search kr rhe usme kese dikhega kuch bhi likh ke
+
+#categories-esme visit kr ke me particular categories ke hi font-family dekh skti hu jese (serif,sans serif, display,handwritting ,monospace)
+
+#jese ab meko use krna koi bhi font html or css me to me kese use krungi-
+~html-phele link kr do css esme using <link rel="stylesheet" href="style.css">,uske baad agr h1 me hmko font change krna h to h1  tag ke andr apna college likh do or phir
+~css-css rule ko copy kr ke css file me paste krenge jisme apne ko jo font chaiye jese h1 {}me chaiye to h1 ke andr pasre krenge
+
+*/
+
+
+
+h1{
+    font-family: Roboto Slab, serif;
+    font-weight: 400;
+  }

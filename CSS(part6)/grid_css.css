@@ -1,0 +1,19 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: black ;
+    /* display: flex;
+    agr me flex krti to vo row me 1D me ho jaayenge child box or equal spacing nhi hogi */
+
+    display: grid;
+    /* agr me   grid krti to vo col me 2D me ho jaayenge child box or equal spacing  hogi esme */
+
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}

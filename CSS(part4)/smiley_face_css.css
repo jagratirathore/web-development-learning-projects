@@ -1,0 +1,44 @@
+.face{
+    
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgb(255, 145, 0);
+
+}
+.eyes1{
+    
+    width: 75px;;
+    height:75px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    /* top left corner se size ka mesurement krte h hm absolute me */
+    top: 65px;
+    left: 75px;
+    
+}
+
+.eyes2{
+    
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    border-radius: 50%;
+    position:absolute;
+    top:65px;
+    left:255px;
+    
+}
+
+.mouth{
+    width: 200px;
+    height: 75px;
+    background-color: brown;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 250px ;
+    left: 100px;
+    
+
+}

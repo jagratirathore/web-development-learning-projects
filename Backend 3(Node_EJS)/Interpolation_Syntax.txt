@@ -1,0 +1,4 @@
+Interpolation Syntax: Interpolation refers to embedding expressions into markup up text.
+
+
+note:EJS is dynamically.

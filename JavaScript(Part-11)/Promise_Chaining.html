@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Promise_Chaining.css">
+</head>
+<body>
+   <script src="Promise_Chaining.js"></script> 
+</body>
+</html>
+<!-- Promise Chaining: ek ke baad ek ke baad bhut saare prmoise ko chain krna is called promise chaining.or ek ke baad ek ek bhut saare then  chain krna ese bhi bol skte h. jo kaam callback se  kra rhe the ab vo improved version se promise se kr vaayenege hm,ye try=catch ki trh hi hota h bhut saare try ke saath ek catch hota h ese hi multiple then ke sath ek catch lenge hm-->
+
+<!-- Improved Version:
+saveToDBPromise("apnacollege")
+ .then(()=>{
+    console.log("promise1 resolved");
+    return saveToDBPromise("hello world");
+ })
+ .then(()=>{
+    console.log("promise2 resolved");
+ })
+ .catch(()=>{
+    console.log("some promise rejected");
+ }); -->

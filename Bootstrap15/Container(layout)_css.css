@@ -1,0 +1,24 @@
+/* Container-(eska kaam hota h ek particular width pe set krna-jo bhi content hoga eske andr )  It is a most basic layout in bootstrap jitne bhi component h unko ek define space me rakhna to hm ek div bnaayenge body me shortcut se-.container kr ke enter krenge ,es div ke and phir h2 vgera vgera likh skte h then p vgera */
+
+/* agr me class="container"->hta du to vo puri width le lega (mtlb ki bootstrap ht gya ),but vaaps lga du to conteiner us content ko ek particular width me set kr dega ->kr ke dekho phir web page pe changes smjh me aa jaayenge
+
+note- or agr me ssb krne ke baad bootstrap ki link ko commentout kr du to sb style ht jaayengi container ki or sath sath font ki styling bhi change ho jaayegi,width,family,size sb bootstrap se-inspect kr ke check kr skte h hm
+
+~agr mene inspect pe ja ke resposivness check ki screen ko chota bda kr ke to container change hote dikhega q ki bootstrap pe container ki width alg alg hoti extrasmall,smakk,medium,large,x-large and xxlarge acc to system size*/
+/* 
+
+
+
+
+/* .container-md{
+    background-color: lightcoral;
+} */
+
+/* container-fluid:-hmari 100% space occupied hoti h esme */
+ /* .container-fluid{
+    background-color: lightcoral;
+ } */ 
+
+  .container{
+    background-color: lightcoral;
+} 

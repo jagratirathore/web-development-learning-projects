@@ -1,0 +1,4 @@
+Create Form For Update:
+Edit Route 
+
+Serve the edit form     GET      /posts/:id/edit

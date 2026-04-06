@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- spotify main website pe ->inspect open krne ke liye ctl+shift+I press kre -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <!-- add css file -->
+     <link rel="stylesheet" href="Basics_css.css">
+     <link rel="stylesheet" href="Layout_css.css">
+     <link rel="stylesheet" href="Sidebar(Nav)_css.css">
+     <link rel="stylesheet" href="Sidebar(library)_css.css">
+     <link rel="stylesheet" href="Llibrary(Boxes)_css.css">
+     <link rel="stylesheet" href="Sticky_Nav_css.css ">
+     <link rel="stylesheet" href="cards_css.css">
+     <link rel="stylesheet" href="Footer_Line_css.css">
+     <link rel="stylesheet" href="Setting_up_player_css.css">
+     <link rel="stylesheet" href="Players_Controls_css.css">
+
+
+
+
+
+
+
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" >
+    <!-- (yaha esliye icon de rhe q ki hmko tiltle ke andr logo dikhna chaiye hmara)folder ke andlr ho koi bhi chij to usko access krne ke liye hm esa likhte h-1("./assests/logo.png") -->
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify-Web Player:Music for everyone</title>
+    <!-- Montserrat google font link copy ki 300 to 700 -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,1,300;1,400;1,500;1,600;1,700;&family=Roboto+Slab:wght@300..700&family=Roboto:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+     
+</head>
+<body>
+    <!--1 div create kr rhe  [(main)overall website]ke liye -uske andr,(3 div) for 3 ke liye q ki puri website 3 parts me divide h -sidebar,main-content,music-player -->
+    <div class="main">
+
+        <div class="sidebar">
+        <!-- esme do parts me divide krenge to do box bnege div ke ek nav,or ek library -->
+         <div class="nav">
+           <!-- nav-option me do chiz h icon or fir text(anchor tag<a href="#"></a>) -->
+            <div class="nav-option" style="opacity:1"><!-- by defult phele se hi opacity fix kr denge apn -->
+                <i class="fa-solid fa-house"></i><!--font awesome.com website se(q ki hmne fontawesomecdn link already copy paste kr rakhi h head pe) free icon me ja ke search krenge apne icon ka name or copy paste krenge link copy krenge-->
+                <a href="#">Home</a>
+            </div>
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i><!--font awesome.com website se(q ki hmne fontawesomecdn link already copy paste kr rakhi h head pe) free icon me ja ke search krenge apne icon ka name or copy paste krenge link copy krenge-->
+                <a href="#">Search</a>
+            </div>
+            </div>
+
+         <div class="library">
+            <div class="options">
+            <div class="lib-option nav-option"><!-- nav-option esliye krenge ku ki jo upr styling  same vo yaha bhi ho -->
+                <img src="./assets/library_icon.png">
+                <a href="#">Your Library</a>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+         </div>
+         <div class="lib-box">
+            <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy, we'll help you</p>
+            <button class="badge" >Create playlist</button>
+         </div>
+          <div class="box">
+            <p class="box-p1">Lets' find some podcasts to follow</p>
+            <p class="box-p2">We'll keep you updates on new episodes</p>
+            <button class="badge" >Browse podcasts</button>
+         </div>
+        </div>
+     </div>
+     </div>
+        <div class="main-content">
+        <div class="sticky-nav">
+            <div class="sticky-nav-icons">
+              <img src="./assets/backward_icon.png">
+              <img src="./assets/forward_icon.png" >
+            </div>
+            <div class="sticky-nav-options">
+               <button class="badge nav-item hide">Explore Premium</button>
+               <button class="badge nav-item dark-badge" ><i class="fa-solid fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
+            <i class="fa-regular fa-user nav-item"></i>
+            </div>
+            </div>   
+            
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                </div><br>
+
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                     <div class="card">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                     <div class="card">
+                        <img src="./assets/card4img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                </div><br>
+
+                <h2>Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                     <div class="card">
+                        <img src="./assets/card6img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs - India</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                     <div class="card">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                </div>
+
+                <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>bhut saari space  create krenge last me -->
+                 <div class="footer">
+                    <div class="line"></div>
+                 </div>
+             </div>
+         <div class="music-player">
+            <div class="album"></div>
+            <div class="player"></div>
+             <div class="player-controls">
+                <img src="./assets/player_icon1.png"class="player-control-icon">
+                <img src="./assets/player_icon2.png" class="player-control-icon">
+                <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height:1rem">
+                <img src="./assets/player_icon4.png" class="player-control-icon">
+                 <img src="./assets/player_icon5.png" class="player-control-icon">
+            </div>
+            <div class="playback-bar">
+                <span class="curr-time">00:00</span>
+                <input type="range" min="0" max="100" class="progress-bar" step="1"><!--step=1,esliye liya q ki progress baar me ek baar me ek hi value bde-->
+                <span class="tot-time">3:33</span>
+            </div>
+         
+            <div class="controls"></div>
+         </div>
+    </div>
+    
+</body>
+</html>

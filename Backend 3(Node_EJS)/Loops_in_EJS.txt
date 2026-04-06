@@ -1,0 +1,5 @@
+Loops in EJS:
+
+<% for(user of followers) { %>
+<li><%= user %> <li>
+<% } %>

@@ -1,0 +1,121 @@
+🔹 Basic Commands
+
+init → New Git repository create karne ke liye
+
+git init
+
+Add Remote Repository
+
+git remote add origin <repository-link>
+
+Check Remote
+
+git remote -v
+
+Check Branch
+
+git branch
+
+Rename Branch to main
+
+git branch -M main
+
+Push to GitHub
+
+git push origin main
+🔹 When We Create Project Locally (Without GitHub)
+
+👉 Kai baar hum project direct GitHub par nahi banate,
+balki apne local system (laptop) par banate hain.
+
+Example:
+
+Humne delta-demo folder ke andar ek folder banaya:
+
+project2
+
+Check karne ke liye:
+
+ls
+
+👉 Sirf project2 folder dikhai dega
+
+Uske andar jaane ke liye:
+
+cd project2
+
+Ab agar:
+
+ls
+
+👉 To folder empty hoga (koi file nahi)
+
+🔹 Check Hidden Files
+ls -la
+
+👉 Output:
+
+.
+..
+
+📌 Matlab:
+
+Abhi tak ye folder Git repository nahi hai
+Git is project ko track nahi kar raha
+
+🔹 Convert Folder into Git Repository
+
+👉 Ab hum project2 ko Git repository banana chahte hain
+
+Command:
+git init
+
+👉 Output:
+
+Initialized empty Git repository
+🔹 After git init
+
+Phir se check karo:
+
+ls -la
+
+👉 Ab output me dikhega:
+
+.
+..
+.git ✅
+🔹 Important Point
+
+👉 .git folder ka matlab:
+
+Ab ye folder Git repository ban chuka hai
+Git ab is project ke changes ko track karega
+🔹 Now You Can Do
+
+Ab tum is project me:
+
+git add
+git commit
+git push
+
+sab use kar sakte ho ✅
+
+🔹 Simple Understanding
+
+👉 git init =
+“Normal folder ko Git repository me convert karna”
+
+Agar chaho to mai next “init se lekar push tak full real example (step-by-step flow)” bhi bana dungi 👍
+
+or
+
+init: used to create a new git repo   (git init)
+
+git remote add origin <-link->
+git remote -v (to verify remote)
+git branch (to check branch)
+git branch -M main (to rename branch)
+git push origin main
+
+/jese khi baar ye hota h ki hm apne project ko gihub pe na bnate huve (hmare system me bna rhe hote h /local repository pr)bna rhe hote h jese hmne delta-demo me ek folder bnaya project2 name se or ls se chech krnege ek hi folder hoga usme serf project2 , or then cs kr ke hm project2 me ja skte h, or if project2 ke andr jaane ke baad ls kiya to koi bhi uske andr folder file nhi h, or if hm project2 ke andr saari ki saari hidden files dekhenge to : ls -la or enter krenge to aayega . or .. yaani project2 ko hmara github track nhi kr rha h 
+//basically hm project2 ko github  respository me create krna chahte h hmare local system me to us kaam ko krne ke liye hm init command use krenge : git init to aayega(initialized empty git repsoitory) ab agr ls -la krte h to aayega . , .. ,.git (ab project2 git repository bn gya h ab sb changes eske and hm kr skte h add,commit,push etc)

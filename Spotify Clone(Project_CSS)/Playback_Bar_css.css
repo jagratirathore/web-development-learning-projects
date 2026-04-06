@@ -1,0 +1,267 @@
+*{
+    /* google font-montserrat ->ka css link copy kiya h */
+    font-family: "Montserrat", sans-serif;
+     margin: 0; /* taaki sb side se hat jaaye space */
+     background-color: black;
+     color: white; /*jo bhi text likhenge sb white me aayega */
+    overflow: hidden; /* hm puri website ko hide krenge overflow se serf main content ko scrollable bnaayenge baad me, (mtlb-content hmara box se bhaar jaa rha to vo hide ho jaayega hidden ki vjha se or hm usko scroll kr ke dekh bhi nhi smkte h),bhut saari propert hoti h overflow ki-visible,hidden,clip,scroll,auto (mdn website pe pd lo)*/
+ }
+
+ .main{
+    display: flex; /* overall hua h ye q ki main h(puri webiste)sb text side bar,main-menu,music-player sb ek ke baad ek aa jaayega ek row me without space -3 no nested div */
+    height:100vh;/* vh-viewport(jitni hmari screen ki height utni puri website le legi) */
+    padding:0.5rem; /*bhut jada hi chipka huva tha to thodi breathing apace de di screen se dur hone ke liye*/
+}
+
+ .sidebar{
+  background-color: #000;   /*ye box left me aayega-bnega sidebar  */
+  width: 340px; /*breadth(wide) es box ki 340 px hogi*/
+  border-radius: 1rem;/*(edges->hmari round shape me aa jaayegi box ke,1rem=16px h esko hmne rem esliye liya q ki jese jese screen size chota krenge vo us form me aate jaayegi mtlb responsive ke liye)*/
+  margin-right: 0.5rem;/*ye side se margin di h right se sidebar ke*/
+ }
+
+ .main-content{
+    background-color:  black;  /*ye box right me aayega-bnega main-content */
+    flex:1; /*jitni sidebar ko jgha de di de di bhale mera size chota ho pr remaing saari vgha mujhe dedo*/
+    border-radius: 1rem;/*(edges->hmari round shape me aa jaayegi box ke,1rem=16px h esko hmne rem esliye liya q ki jese jese screen size chota krenge vo us form me aate jaayegi mtlb responsive ke liye)*/
+    overflow: auto;/*overflow mtlb jb content jada ho jaayega main-content me to (auto->mtlb scroll bar hmesha nhi dikhai dega serf jb jarurat hogi tb dikhai dega(mtlb jb niche ke content ko dekhna ho to))*/
+    padding: 0 1.5rem 0 1.5rem;
+ }
+
+ .music-player{
+     background-color:  black; /*ye box bottom me aayega-bnega music-player */
+     position:fixed; /*jo hmara music player h eski position hmko [bottom(niche)->to esko bhi 0 krenge] me fixed chaiye */
+     bottom:0; /*position bottom(niche)fix kri to 0*/
+     width:100%; /*es box ko breadth(chodaai,wide)puri dena h screensize itni to 100% kr denge hm*/
+     height: 72px;/*inspect kr ke dekha to bta chla spotify ki website pe height *72 px h eski*/
+ }
+ 
+ /* sidebar me anchor tag ki underline (none)hat jaaye or color change kr denge website ke acc jo usme ho color text ke vo */
+ a{
+   text-decoration: none;
+   color:#fff
+ }
+ /*sidebar me nav h ->us div(box)ka background color change kr denge hm acc to website of spotify*/
+ .nav{
+  background-color:#121212;
+  border-radius: 1rem;/*(edges->hmari round shape me aa jaayegi box ke,1rem=16px h esko hmne rem esliye liya q ki jese jese screen size chota krenge vo us form me aate jaayegi mtlb responsive ke liye)*/
+  display: flex;/*dono div h ye ek line me(horizontal) aa jaate h ek ke baad(vertical) ek to hmko to -ek ke niche ek chaye to hm flex ki direction oppisite kr denge(flex-direction: col ,kr ke)*/ 
+  flex-direction: column;
+  justify-content: center;/*vertically hmara sara content center me aa jaaye to hm use krte h ye*/
+  height:100px ;/*box ki height approx itni h inspect ke ke dekha*/
+  padding: 0.5rem 0.75rem; /*inspect me box model me dekhenge to paading 8px dono side which is equals to 0.5rem ,or left right ki -12px which is equals to 0.75rem*/
+ }
+
+ .nav-option{
+    line-height:2.5rem;
+     /* agr hm nav baar pe hover krte to vo thoda sa bright ho jaata h->to hm opacity denge 0.7 */
+     opacity:0.7;
+     padding: 0.5rem 0.75rem;/*left right ki thodi or padding bda dete h hm*/
+ }
+ .nav-option:hover{/*jb cursor ko uspe le jaayenge to vo change hoga uski opacity-1*/
+    opacity:1;/*to higlighted dikhne lge ga anchor text ka text*/
+ }
+ .nav-option i{ /*i=icon*/
+    font-size: 1.25rem;
+ }
+ .nav-option a{/*a=anchor tag*/
+    font-size: 1 rem;
+    margin-left: 1rem;/*thoda extra space add krna icon or text me library ki*/
+ }
+ 
+ .library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;/*bachi huvi puri height aa jaayegi */
+    margin-top:0.5rem;
+    padding: 0.5rem 0.75rem;
+ }
+ .options{
+    display: flex;
+    justify-content: space-between;/*hmaari aadhi chiz left pe hi reh jaayegi or aadhi chiz right pe aa jaayegi(+or->)*/
+    vertical-align: center;/*same line pe saari chiz center ho ke aa jaayegi*/
+ }
+
+ .lib-option img{
+    height: 1.25rem;
+    width:1.25reml
+ }
+
+ .icons{
+    font-size: 1rem;
+    display: flex;
+ }
+
+ .icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+    margin-top: 1rem;
+ }
+ .icons i:hover{
+    opacity: 1;
+ }
+ .box{
+    background-color:#232323 ;/*light grey ka shade h ye color */
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+ }
+
+ .box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem;
+    background-color: #232323;
+    
+ }
+
+ .box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin: 1rem;
+    background-color: #232323;
+
+    
+ }
+ .badge{
+    background-color:#fff ;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1.5rem;
+    color: black;
+    margin-top:0.5rem;
+    height: 2rem;
+    width: fit-content;
+    font-weight: 550;/*ye font ko dark krne ke liye use krte h hm*/
+}
+.dark-badge{
+    background-color:#000 ;
+    color: #fff;
+}
+
+.sticky-nav{
+    position: sticky;/*jha stick kr vana ho vha top se position bhi 0 dena hota h to stick hota h*/
+    top: 0; 
+    background-color: #121212;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;/*information layer me jaayegi es se hm layer create kr skte h*/
+}
+
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-nav-options button{
+    margin-right: 1rem;
+}
+ /*ye apn ne reposiveness ke liye diya h jb screen choti krenge to ye vaala button hide ho jayega(exxplore premium button jese hi 1000 paar hoga )*/
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left:1.5rem ;
+    margin-top: 1rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;/*multiple h to vo niche card shift ho jaayegne*/
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 10%;
+    
+}
+.controls{
+    width: 25%;
+    
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ .progress-bar{
+    width: 70%;
+    appearance: none;/*->sb bydefault h style vo hat jaaye to hm use krte h apny style add krenge esme(jese button ka bydefault white color hota hi h)kisi bhi element ke UI ko control krti h appearance propert ki vo elelment kesa dikhta  depending upon ki konse operating sytem pe webpage kholta h*/
+    background-color: transparent;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0.6rem;
+
+}
+
+
+.progress-bar::-webkit-slider-runnable-trak{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.1rem;
+   
+} 
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 0.75rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+} 

@@ -1,0 +1,52 @@
+Deleting Files & Folders:
+rm -> removes files.
+rmdir -> removes empty Folders
+rm -rf ->removes any folders
+note-
+rf=recursive delete
+rf=forced
+rf=recursive force
+rf=remove with force
+
+// Deleting Files & Folders:
+
+// rm (remove):
+// Ye command files delete karne ke liye use hoti hai.
+
+// Example:
+// rm abc.txt
+// -> "abc.txt" file delete ho jayegi
+
+// rmdir (remove directory):
+// Ye sirf empty folders ko delete karta hai.
+
+// Example:
+// rmdir testFolder
+// -> "testFolder" delete hoga (sirf tab jab wo empty ho)
+
+// rm -r (recursive):
+// Ye folders aur unke andar ke saare files/folders ko delete karta hai.
+
+// Example:
+// rm -r myFolder
+// -> "myFolder" aur uske andar ka sara data delete ho jayega
+
+// rm -f (force):
+// Ye bina confirmation ke files ko forcefully delete karta hai.
+
+// Example:
+// rm -f abc.txt
+// -> "abc.txt" bina warning ke delete ho jayegi
+
+// rm -rf (recursive + force):
+// Ye command kisi bhi folder ko uske andar ke sab data ke saath
+// bina confirmation ke permanently delete kar deta hai.
+
+// Example:
+// rm -rf projectFolder
+// -> "projectFolder" aur uska pura data permanently delete ho jayega
+
+// Note:
+// -r = recursive (andar ke sab files/folders bhi delete karega)
+// -f = force (bina confirmation ke delete karega)
+// rm -rf = recursive + force (most powerful and risky command)

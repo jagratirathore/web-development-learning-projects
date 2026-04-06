@@ -1,0 +1,55 @@
+correct it-//terminals ke sath bhut saari terms aati h jisko interchangeably hm use krte h-console,terminal,shell,command line sb ek hi hota h
+terminal: ke andr hm kuch command type krte h 
+
+Different Terms:(sb same h terminal)
+
+
+~Command Line: any interface that is used by entering textual commands (gen. Windows centric)
+~Terminal: This is a type of command line (gen. Mac centric)
+~Console: A command-line interface used to work with your computer
+~Shell: A program running on Terminal
+~Bash: A popular shell on Mac OS/Linux
+~Z-Shell: Another shell(Default),zsh=Z shell(pre installed aa ta h mac pe)
+
+note:phele command line,terminal,console sb ki sb haardware tools hote the hardware mtlb atm machine smjh lete h or uske andr software use hota h atm machine=terminal,andr atm machine ke andr koi program run ho rha to=shell,shell types-bash shell(ye mac,os,window sb me popular h),z-shell(already install ho ke aata h ye mac me )
+
+sbhi commands gitbash pe chlegi to sb se phele windows user gitbash install kre
+
+// Terminal se related kaafi terms hoti hain jo kabhi-kabhi interchangeably use hoti hain,
+// lekin technically sabka meaning thoda different hota hai (same nahi hote).
+
+// Terminal: Ek interface jisme hum commands type karte hain.
+
+// Different Terms:
+
+// Command Line:
+// Aisa interface jahan user textual commands enter karke system se interact karta hai.
+// (Generally Windows me use hota hai - Command Prompt)
+
+// Terminal:
+// Ek program jo command line interface provide karta hai.
+// (Mac/Linux me commonly use hota hai)
+
+// Console:
+// Ek command-line interface jo direct computer system ke sath interact karta hai.
+
+// Shell:
+// Ek program jo terminal ke andar run hota hai aur commands ko execute karta hai.
+
+// Bash (Bourne Again Shell):
+// Ek popular shell jo Linux aur Mac me widely use hota hai.
+
+// Z-Shell (zsh):
+// Bash ka advanced version, Mac me by default pre-installed hota hai.
+
+// Note:
+// Pehle ke time me command line, terminal aur console hardware devices hote the.
+// Example: ATM machine ko terminal samajh sakte hain,
+// aur uske andar jo program run hota hai wo shell hota hai.
+
+// Shell ke types:
+// - Bash Shell (Linux/Mac me popular, Windows me Git Bash ke through use hota hai)
+// - Z-Shell (Mac me pre-installed)
+
+// Windows users ke liye:
+// Saari commands easily run karne ke liye Git Bash install karna useful hota hai.

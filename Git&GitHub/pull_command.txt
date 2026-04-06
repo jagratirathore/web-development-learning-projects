@@ -1,0 +1,78 @@
+Basic Command: git pull
+👉 Definition:
+git pull origin main
+
+✔️ Ye command remote repository (GitHub) se latest changes ko fetch + merge karke local repository ko update karti hai
+
+🔹 Example (Step-by-Step)
+
+👉 Hume pata hai app.js file feature branch me hai
+
+🟢 Step 1: Check Branch
+git branch
+🟢 Step 2: Switch to Main Branch
+git checkout main
+
+👉 Ab tum main branch par ho
+
+📌 Agar yahan changes nahi dikh rahe:
+✔️ Kyunki tumne changes GitHub (remote repo) par kiye hain
+✔️ Local system abhi update nahi hai
+
+🟢 Step 3: Pull Latest Changes
+git pull origin main
+
+📌 Output Example:
+
+1 file changed (app.js)
+
+✔️ Ab GitHub ke changes tumhare local system me aa gaye
+
+🔹 Merge Conflicts ⚠️
+
+👉 Kabhi-kabhi merge conflicts aa jaate hain
+
+🔹 Reason:
+
+👉 Jab same file ki same line ko:
+
+Local me bhi change kiya ho
+Aur GitHub (remote) par bhi change ho
+🔹 Example of Conflict
+🟢 Local (tumhara system):
+// app.js
+console.log("Hello World");
+🟢 Remote (GitHub):
+// app.js
+console.log("Hello Jagrati");
+🔴 After git pull (Conflict dikhega):
+<<<<<<< HEAD
+console.log("Hello World");
+=======
+console.log("Hello Jagrati");
+>>>>>>> main
+🔹 Solve Conflict
+
+👉 Tum decide karogi kaunsa code rakhna hai:
+
+✔️ Example (Final Code):
+
+console.log("Hello Jagrati");
+🔹 Final Steps After Fix
+git add .
+git commit -m "Resolved merge conflict"
+
+✔️ Conflict solve ho gaya
+
+🔹 Summary
+git pull origin main   # fetch + merge latest changes
+
+✔️ Use when:
+
+GitHub ke changes local me lana ho
+
+⚠️ Conflict tab aata hai:
+
+Same file, same line change ho
+
+Agar chaho to mai merge conflict ka diagram + real interview explanation bhi bana dungi 👍

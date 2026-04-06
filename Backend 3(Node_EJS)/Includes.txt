@@ -1,0 +1,3 @@
+Includes:(subtemplates)
+
+<%- include("includes/head.ejs"); %>

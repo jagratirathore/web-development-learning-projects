@@ -1,0 +1,20 @@
+DOM:DOM kya hota hai?
+
+Jab hum HTML + CSS ko browser me load karte hain, to browser ek Tree Structure bana deta hai.
+(html+css)-->link java scrit ko to DOM tyaar hoga jisme tree strucutre hoga document sb se bda parent node hoga esko object bhi bolenge hm document object se kuch bhi change kr skte h hmare html or css ke code me ese hi bhut saare object bnege jese un sb ko node(tree ke andr circle ke form me every individual circle node h-or parent document node khelati h) bhi bolegne-document,body,div,ul,h1,li,li,li in java script(js)
+
+code hoga (html +css ka)-                     TREE(document)-esko node object dono bolenge
+<body>                                                 |
+ <div>                                               body
+   <ha>Todo</h1>                   =>               |    |
+   <ul>                                           div    ul
+    <li>Eat</li>                                   |     | | |                       
+    <li>Code</li>                                  h1   li li li 
+    <li>Sleep</li?                           
+  </ul>
+</body>
+
+note-html + css me jitna bhi code hotaa h vo accesable hota h document node se or ye node javascript me ek object h ,every single element tree ka js me ja kr hr node object bn jata h,agr hmko body ko change krna to hm body ke object se change krnege vo hmko html or css me dikhenge changes
+
+console-> me khi bhi ja ke window object ko access kr skte js me ,ye inbuilt h or automatic generate hoti h khi bhi console pe ja ke window likh denge to automatic generwte ho jaati h.
+hr ek single webpage ke liye-(document)object automatic generate hoti h hmari html or css ke liye or saari detail store krti h html+css ka-but jb bhi hmko property or method dikhana hota js me to hm console,log nhi krnege cosole.dir(document) krenge q ki document ke and or bhi object h,or jb bhi hmko js ko use krna hoga manipualte or change krne ke liye to hm use krenge document ka  

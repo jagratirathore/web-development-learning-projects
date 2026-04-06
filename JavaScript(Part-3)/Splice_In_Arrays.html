@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Splice_In_Arrays.js"></script>
+</body>
+</html>
+
+<!-- splice(one in all h ye)->removes/replaces/add elements in place
+spice(startingindex ,(optional h ye-deleteCount),jitne bhi item krna h , kr ke add kr skte h-item0....itemN)
+
+>let colors=["red","yellow","blue","orange","pink","white"];
+>colors.splice(4);
+<(2)["pink","white"]
+>colors
+<(4)['red','yellow','blue','orange']
+>colors.splice(0,1);
+<['red']
+>colors
+<(3)['yellow','blue','orange']
+>colors.splice(0,1,"black","grey");
+<['yellow']
+
+Note-slice-original array ke andar koi changes nhi krta h,ye copy return krta h
+splice-jo bhi add delete kr rhe h sb changes original array me hi hota h->

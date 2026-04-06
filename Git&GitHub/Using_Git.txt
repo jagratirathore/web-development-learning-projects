@@ -1,0 +1,53 @@
+Using Git:
+~Command Line(Most Popular)
+~IDE/Code Editors (like VSCode)
+~Graphical User Interface(like GitKraken)
+
+#Ways to Use Git
+
+Git ko use karne ke multiple tareeke hote hain, lekin sabse popular tareeka Command Line / Terminal hai — aur hum bhi wahi use karenge.
+
+🔹 1st Method: Command Line / Terminal
+
+Hum terminal ke through Git use karenge.
+
+Mac (Operating System) & Linux:
+In systems me generally Git pehle se installed hota hai.
+Check karne ke liye terminal me command likho:
+
+git --version
+
+Agar Git installed hoga, to uska version print ho jayega.
+
+Windows Users:
+Agar tumne GitHub install kiya hai, to uske saath Git bhi install ho jata hai.
+Yahan bhi check karne ke liye:
+
+git --version
+
+Agar tum sirf terminal me:
+
+git
+
+type karte ho, to Git ki saari commands ki list show ho jaati hai, jaise:
+
+clone, init, add, mv, restore, rm, bisect, diff, grep, log, show, status, branch, commit, merge, etc.
+🔹 Git Install Kaise Kare?
+
+Agar Git installed nahi hai, to browser par jaakar git-scm website se download karke install kar sakte ho.
+
+🔹 2nd Method: IDE / Code Editors
+Jaise VS Code (Visual Studio Code)
+Inme Git use karne ke liye extensions available hote hain
+GUI buttons ke through easily Git operations kar sakte ho
+🔹 3rd Method: GUI (Graphical User Interface)
+Jaise GitKraken
+GUI tools download karke Git ko visually use kar sakte ho (without typing commands)
+🔹 Advantages of Using Command Line in Git
+✔️ Most Popular Method
+✔️ Easy to Learn (agar command line seekh li, to Git bhi easy ho jata hai)
+✔️ Faster Execution
+✔️ No Limitations (GUI ya IDE me kuch complex kaam mushkil ho sakte hain)
+✔️ Full Control (Terminal me basic se lekar advanced sab possible hai)
+
+Agar chaho to mai isko exam-ready notes (PDF style) ya short revision notes me bhi convert kar dungi 👍

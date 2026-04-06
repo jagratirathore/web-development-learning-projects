@@ -1,0 +1,18 @@
+#Library v/s Framework:
+
+#Library: A library is a collection of pre-written code that can be used to perform specific tasks.
+Example-axios
+
+#Framework: A framwork is a set of pre-written code that provides a structure for developing software applications.
+Example-express
+
+
+
+#Express: A Node.js web application Framework It is used to server side programing.
+1) listen for incoming request.
+2)parse
+3)match response with routes.
+4)response
+
+
+client(frontened)--{request}-->server(backend)--->{response}to client (frontened)

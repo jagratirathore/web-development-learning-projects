@@ -1,0 +1,172 @@
+APIs (Some Random APIs):-
+
+https://catfact.ninja/fact   ->  it sends random cat facts
+
+https://www.boredapi.com/api/activity  ->  it sends an activity to do when boredapi
+
+https://dog.ceo/api/breeds/image/random  ->  sends cute dog pictures
+
+note-
+// Note:
+// Jab hum API ko request bhejte hain,
+// to jo response milta hai wo generally JSON format me hota hai.
+
+// Example:
+// Cat facts API har refresh par alag-alag data (random facts) JSON format me deta hai.
+
+// Bored API bhi har request par ek nayi activity suggest karta hai,
+// aur wo bhi JSON format me hi response deta hai.
+
+// Conclusion:
+// Zyadaatar APIs data JSON (JavaScript Object Notation) format me return karti hain.
+
+notes-
+// Some Random APIs:
+
+// https://catfact.ninja/fact  
+// → Ye random cat facts send karta hai
+
+// https://www.boredapi.com/api/activity  
+// → Ye bored hone par ek random activity suggest karta hai
+
+// https://dog.ceo/api/breeds/image/random  
+// → Ye random cute dog image bhejta hai
+
+
+
+// Example (Twitter / Meta APIs):
+// Twitter ki APIs exist karti hain jinke through hum different kaam kar sakte hain,
+// jaise tweets fetch karna, post karna, reply karna, etc.
+
+// Lekin "bina login ke directly tweet/post karna" possible nahi hota.
+// APIs use karne ke liye authentication (API key / token) zaroori hota hai.
+
+
+// Meta (Instagram/Facebook) APIs:
+// Inki help se hum posts, likes, comments, tags, etc. manage kar sakte hain,
+// lekin iske liye bhi proper permissions aur authentication required hota hai.
+
+
+// API Key:
+// API key ek tarah ka secret password hota hai,
+// jo batata hai ki request valid user/app se aa rahi hai.
+
+
+// API Endpoint:
+// API endpoint ek URL hota hai jahan hum request bhejte hain
+// (jaise: https://catfact.ninja/fact)
+
+
+// Free vs Paid APIs:
+// - Kuch APIs free hoti hain (no API key required)
+// - Kuch APIs me API key lagti hai
+// - Kuch APIs paid hoti hain (subscription ya usage limit ke baad payment)
+
+// Example:
+// Twitter API pehle limited free access deta hai,
+// uske baad paid plans use karne padte hain.
+
+
+// Summary:
+// APIs hume data access karne aur applications ko connect karne ka tarika deti hain,
+// lekin generally authentication (API key/token) aur permissions required hoti hain.
+
+//// Examples:
+// Twitter API, Instagram API, Google Maps Direction API (jisme transportation,
+// walking, driving routes ka overview milta hai).
+
+
+// APIs ko samajhne ke liye unki documentation padhna bahut important hota hai.
+// Documentation me hume endpoints, parameters, response format, aur usage ka pura detail milta hai.
+
+
+// APIs use karne ke liye hume generally access token ya API key generate karni padti hai,
+// jo authentication ke liye use hoti hai.
+
+
+// Best Practice:
+// API ko properly samajhne ke liye documentation padho,
+// aur implementation ke liye video/tutorial follow karke practical karo.
+
+// Hum APIs ko call kar sakte hain:
+// 1. Browser (Google) me direct URL daal kar
+// 2. Tools jaise Hoppscotch / Postman ka use karke
+// 3. JavaScript (fetch / axios) ke through API request bhej kar
+
+
+// Example (Browser me):
+// https://catfact.ninja/fact
+
+// APIs ko tools (Hoppscotch / Postman) se call karne ka tarika:
+
+// Steps:
+
+// 1. Tool open karo (Hoppscotch ya Postman)
+
+// 2. API endpoint URL daalo
+// Example:
+// https://catfact.ninja/fact
+
+// 3. HTTP method select karo (usually GET)
+
+// 4. "Send" button par click karo
+
+// 5. Response niche JSON format me show ho jayega
+
+
+// Notes:
+// - GET → data fetch karne ke liye
+// - POST → data send karne ke liye
+// - PUT/PATCH → data update karne ke liye
+// - DELETE → data delete karne ke liye
+
+
+// Conclusion:
+// Tools ki help se hum bina code likhe easily API test kar sakte hain
+// aur response ko JSON format me dekh sakte hain
+
+// Example (JavaScript using fetch):
+fetch("https://catfact.ninja/fact")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.log(err));
+
+
+// Endpoint kya hota hai?
+
+// Endpoint ek specific URL hota hai
+// jahan hum API request bhejte hain data lene ya bhejne ke liye.
+
+
+// Example:
+// https://catfact.ninja/fact
+// → ye ek API endpoint hai jo random cat fact deta hai
+
+
+// Breakdown:
+// https://catfact.ninja   → base URL (server)
+// /fact                  → endpoint (specific resource)
+
+
+// Aur examples:
+
+// https://dog.ceo/api/breeds/image/random
+// → random dog image ke liye endpoint
+
+// https://www.boredapi.com/api/activity
+// → random activity ke liye endpoint
+
+
+// Important:what is endpoints?
+// Ek API ke multiple endpoints ho sakte hain
+// har endpoint ka alag kaam hota hai
+
+// Example (same API ke different endpoints):
+// /users       → users ka data
+// /posts       → posts ka data
+// /comments    → comments ka data
+
+
+// Conclusion:
+// Endpoint = API ka exact URL jahan request bhejte hain
+// aur jahan se specific data milta hai

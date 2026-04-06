@@ -1,0 +1,39 @@
+h2{
+    /* i know h2 block element h to esko me inline me convert krne ke liye display inline use krungi */
+    display: inline;
+    background-color: pink;
+}
+
+#spanId{
+/* i know <span> inline element h to esko me block me convert krne ke liye display block use krungi */
+        display:block;
+        background-color: skyblue;
+}
+
+span{
+        /* background-color: lightgreen; */
+        border: 2px solid black;
+        height:100px;
+        width: 200px;
+        /* height or width ignore krta h span element hmare browser me */
+        padding: 50px;
+        /* all sides se 50px margin di h to serf left or right se set hoti h top or bottom se nhi  */
+        margin: 20px;
+    }
+
+div{
+
+
+        /* background-color: lightgreen; */
+        border: 2px solid black;
+        height:100px;
+        width: 200px;
+        /* div(block)-me esa nhi hota q ki ye block element h to ye nhi hoga ki height or width ignore krta h span element hmare browser me */
+        padding: 50px;
+        /*div(block)-me esa nhi hota q ki ye block element h to ye nhi hoga ki all sides se 50px margin di h to serf left or right se set hoti h top or bottom se nhi  */
+        margin: 20px;
+    }
+
+
+    
+

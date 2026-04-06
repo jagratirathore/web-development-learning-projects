@@ -1,0 +1,32 @@
+Downoload starter code:DownloadStartedFiles:
+https://drive.google.com/drive/folders/18G_CAxxjofKdUDVkYWJhEIHUDmaKgyF9?usp=sharing
+
+
+note-js ko use kr ke html+css ko change or manipulate krna hota to vo 2 step process hota h-
+1)select element(ex-img,hi,p)
+2)changes/manipulation(EX-size ,color,text change krna h)
+
+~print krana h hmko document object ko to-console pe ja kr type krenge us hi html ki file ko jisme change krna h hmko inspect kr ke-console pe jaayenge
+console.dir(document);
+
+~property (all) name ko expand krenge document ke andr ja ke
+key=a11
+value=HTMLALLCOllection(38)
+
+key:value(eske andr bhut saare key value pairs h all me)
+all:AllCollection(38)
+0;head
+1:html
+2:meta
+3:meta
+4:meta
+5:tittle
+6:link
+7:body
+8:h1
+9:img
+10:h2 etc(jitne bhi html me h vo sb dikhenge)
+
+note-ese bhi access kr skte h all ko direct console pe liko->cosnole.dir(document.all);
+or property ko access kr ke change kr skte h hm kuch bhi console me hi vo reflect ho jaayega hmko hmari file me ki hmne kya chnages kiye h-jese hmko hi ko access krna vo index 8 pe h to hm likhenge->console.dir(document.all(8));array nhi collection h isko bhi hm index ke throught kr skte h, enter krne pe h1 print hogi
+,innerText ko change krna h to-likhenge console pe->console.dir(document.all(8).innerTextText);//output me SPider MAn show krega phir console pe esa likh ke change krungi->document.all(8).innerText = "Peter Parker";//output'Peter Parker' or refresh krne pe changes gaayab ho jaayenge,ye object ki property change ho gai ye possible esliye huva q ki html+css me js meri connected h .

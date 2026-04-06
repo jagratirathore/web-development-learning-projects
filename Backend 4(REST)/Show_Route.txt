@@ -1,0 +1,4 @@
+Implement: GET/posts/:id
+Show Route
+
+GET    /posts/:id       to get one post(using id)

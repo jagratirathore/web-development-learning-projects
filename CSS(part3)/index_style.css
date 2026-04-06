@@ -1,0 +1,82 @@
+/* bhaar border hota fir uske andar ek content ka box hota h */
+/* Height property- content ke bhar jo box ki length btana ta h
+width property-content ke bhar jo box ki breadth btata h 
+padding - content ke niche vaali space ko padding bolte h
+margin- do box ke bich ki distance ko margin bolte h */
+
+div{
+    /* means lmbaai of div ke andar jo content likha uska  */
+    height: 200px; 
+    /* means chodaai of div ke andar jo content likha uska  */
+    width: 300px;
+    background-color: pink;
+    border-width: 5px;
+    border-style: solid;
+    border-color: grey;
+    /* border shorthand -bhi use kr skte h km code likhna pdega */
+     border: 5px solid grey;
+    
+}
+/* border->set krne ke liye element ki border ko use krte h
+border-width->border ki lmbaai ka size denge px me fixed
+border-style->ki kis type ki stype me border chaiye(solid,dotted,dashed,double)
+border-color->color bhi de skte h jo dena 
+border shorthand->width|style|color*/
+h1{
+    border-width: 5px;
+    /* kitne mote dottes rahenge 5 px mote */
+    border-style: dotted;
+    border-color: rgb(214, 151, 151);
+    border-radius: 100px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:5px;
+    /* heading ke dotes vaala box round ho gya h */
+}
+/* border sides->box ki indivisual sides ko bhi control kr skte ki konsi side me konsa color or konsi style kre(border-left,border-right,border-top,border-bottom(niche vaala side box ke opposite of top) */
+div{
+    border-width: 2px;
+    border-left-color:blue ;
+    border-left-style:dashed ;
+    border-top-right-radius: 50px;
+    /* corners round shape me aa gye */
+
+    padding-bottom:2px;
+
+    /* margin-> (koi bhi side ki margin ko control kr skte h inbetween two boxs) set spacing outside of boder between two box model(margin-left,margin-right,margin-top,margin-bottom) */
+    margin-bottom: 10px;
+    /* dono box ke bich niche 10 px ka gape ho gya */
+}
+
+/* border radius-> use to round the corners of an element outer border
+border-radius:15px;
+round ho jaayega box  15 px bas
+border-radius:50%;
+esko percent ke sath bhi set kr skte or circle bhi bna skte height width bhi 50px kr ke  */
+
+
+/* padding-content box or border ke bick ka 4 ro side vaal distance ko padding bolte h or (box model me dono box ke bich me kitna distance rakhna vo set krna) */
+/* padding-left->
+padding-right->
+padding-top->
+padding-bottom-> */
+
+
+button{
+    border: 2px solid black;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    border-radius: 20px;
+
+    /* shorthand padding clockwise(t,r,b,l) */
+    padding: 25px 0 25px 0;
+    
+
+}
+/* (shorthand of padding-
+1.for all 4 sides(4 side se same 50px ka distance aayega)->padding:50px;
+2.top & bottom|left & right->padding:1px 2px;
+3.top|left&right|bottom->padding:1px 2px 3px;
+4.top|right|bottom|left->padding:1px 2px 3px 4px;(clockwise) 
+top or right me rakhna hi nhi h padding to hm set kr skte h 0 un dono ko*/
+

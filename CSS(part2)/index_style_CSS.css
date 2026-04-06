@@ -1,0 +1,157 @@
+/* Selectors-group or elemnet or individual element ko select krna */
+/* ex-h1{
+
+} */
+
+
+
+ /* universal selector->jo puri document file pe apply ho jaaye har ek single element ke liye use hoti h */
+
+ *{
+    font-family: 'Courier New';
+    background-color: pink;
+ }
+
+ /* element selector ->ek ek element ko select kr ke hm change kr skte h css */
+ h3{
+    color: purple;
+ }
+
+ /* multiple element ko sath me bhi same color de skte h h1,h3{
+
+ } */
+  h1, h3{
+    background-color: bisque;
+  }
+
+/* id selector->unique id de ke element ko select krte h hm jese html->(id me jo bhi likha ho vo css me mention kr do # lga ke <h1 id="myID"></h1> then css->#myID{property:value;} */
+#login{
+    background-color:white ;
+}
+#signup{
+    background-color: rgb(147, 78, 78);
+    color: aliceblue ;
+}
+
+/* class selector->Multiple type ke element ko or same type ke element ko ek sath use krne ke liye eska use hota h-<h1><button><p> sb ko class selector krenge to html->(<h1 class="a">  <button class="a"><p class="a">) then css->(.a{color:red;})
+jese(syntax)-> .myclass{
+    property:value;
+} */
+ .upvote{
+    background-color: rgb(185, 158, 210);
+ }
+
+ /* Descendent selector->select all paragraphs inside divs ex-div p{property:value;} */
+ /* paragraph ke andar jitne bhi anchor tag h unko color dena h to me use krungi ye selector decendent,eshe hi class ke andar paragraph ko bhi style kr skti hu or 3 level(p ul li)for li(list) pe bhi de skti hu color andar ja ke ,or 4 level ko bhi style kr skte h and etc */
+ p a{
+  color:rgb(207, 100, 207);
+  background-color: rgb(91, 168, 168);
+ }
+
+ /* Adjacent siblink combinator->jitne bhi p ke just baad h3 aa rhe vo dono siblings(same level pe h jese element1 and element2) ho jaayenge or unko hm +(combine kr denge using plus sign or un pe property lga skte h) */
+ /* syntax-p+h3{
+  property:value;
+ } */
+
+ p+h3{
+  text-decoration:underline;
+ }
+
+ .upvote + button{
+  background-color: rgb(94, 88, 88);
+  color: rgb(218, 230, 241);
+ }
+
+ /* Child combinator ->sef ek level hi choose kr skte h parent ke kitne child h bs (ex-span>button{property:value;})here we choose button only that is child and the parent is span*/
+ div>input{
+  background-color: rgb(158, 180, 220);
+  color: black;
+ }
+
+ /* Attribute  selector-> select krta h elements ko based on presence or value of a given attribute
+ input[attr="value"]{
+  property:value;
+ } */
+  input[type="text"]{
+    color: rgb(116, 181, 116);
+  }
+
+  input[type="password"]{
+    color: rgb(241, 159, 114);
+    
+  }
+
+input[type]{
+   background-color: rgb(174, 105, 239);
+    }
+
+/* Practice Q->Write css statement to implement the following:Set the color for paragraphs inside divs with the id "myId" to gree? */
+#myId p{
+  color: green;
+}
+
+/* Pseudo Class->ye ek specific special state add krta h  selected element pr using selector 
+syntax-element:pseudoclass(hover,active,checked)
+types-
+hover:->jb culsor ko move kr ke element ke upr le ke jaate h jese login  button pe leke gai  to login pe me hover kr rhi hu(hover-krne pe kisi bhi button ya kisi ki bhi property apne acc manipulate kr skte h jese me jese hi button pe hover krungi to backcolor-black or forgroundcolor-white ho rha h)
+active:->jb element or button pe click kiya to active ho gya vo(jese hi click krenege (active) krenge usko to css pink me ho jaayegi
+checked:->radio button ke liye use hota h agr radio button ki css change krna ho to agr vo checked kiya radio button ko to
+nth-of-type:-> nth element ko choose krne me help krti h ye class hmko(hr odd ya hr even ka color yellow ho jaaye jese) */
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+h3:hover{
+   text-decoration: none; /*hat rhi h unerline jb h3 ko hover kr rhe h */
+}
+
+button:active{
+  background-color: pink;
+  color: black;
+}
+p:active{
+  font-weight:bold ;
+  color: brown;
+
+}
+/* log in -> me koi changes nhi aayega q ki vo button id se set kiya h or id se set kiye hua me koi change nhi aata vo button as it is rehta h */
+ input[type="radio"]:checked+label{
+  color:red;
+  font-weight: bold;
+ }
+
+ div:nth-of-type(2n){  /* n ki value di h 2 ki div 2 h uska background color change ho jaaye, agr (2n) kiya to har second element ka color change ho jaayega even ka or(3n) ,(4n) bhi kr skte h */
+  background-color:skyblue;
+ }
+
+ /* Pseudo Elements->specific part of the selected elements ka color change krna jese(::first-letter,::first-line or ::selection->jo select kr rhe h us area me background color change krna h to use krte h hm eska, ka)but esme hm always :: double colon use krte h */
+ h1::first-letter{
+  color: green;
+
+ }
+
+ p::first-line{
+  color: blue;
+}
+p::selection{
+  background-color: rgb(115, 232, 146);
+}
+
+/* Cascading and specifity-notes me screenshot h read it priority-id>class>element selector(jb se jada id ki hoti h) */
+/* cascading me-?jo baad me css add ki vhi aayegi or jo link bhi baad me add ki vho css apply hoti bhale element same ho jese h3 */
+h3{
+  background-color: yellow;
+}
+h3{
+  background-color: blue;
+}
+/* same element h h3 or h3 jada priority blue cascading ko milegi vo hi apply hogi q ki vo baad me likha gya h ese hi link ka bhi hota h css ka jo link baad me likhi h or uske andar same element hote to baad vaali link ki cascading add hoti h */
+
+/* !important->bhut special case me esko hm use krte h ye id or incline se bhi jada important hota h esliye hm esko bhut km use krte h bhut important ho tabhi eski priority sbhi se jada hoti h cascading se bhi jada or to or */
+p{
+  background-color: gray!important;
+}
+
+

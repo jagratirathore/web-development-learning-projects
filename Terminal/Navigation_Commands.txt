@@ -1,0 +1,39 @@
+// Navigation (kisi bhi directory/folder ke andar ya bahar jana)
+
+// cd (change directory):
+// Is command se hum apni current working directory change kar sakte hain.
+
+// Example:
+// cd Desktop
+// Isse hum Desktop folder ke andar chale jaate hain.
+
+// Verify karne ke liye:
+// pwd (print working directory)
+// Ye batata hai ki abhi hum kis folder/location me hain.
+
+// ls:
+// Current folder ke andar jitni files aur folders hain, unki list dikha deta hai.
+
+// Agar kisi folder ke andar jana ho:
+// cd foldername
+// Is tarah hum ek ke andar ek (nested folders) me ja sakte hain.
+
+// cd ..
+// Ye ek step back jane ke liye use hota hai (parent directory me le jata hai)
+
+// cd ../..
+// Ye do step back jane ke liye use hota hai
+
+// Tab key:
+// Suggestions / auto-complete ke liye use hoti hai
+
+// Example:
+// cd Desktop/delta
+// Isse hum Desktop ke andar delta folder(directory) me chale jaate hain
+
+// Agar koi file ya folder exist nahi karta,
+// aur hum usse access karne ki koshish karte hain,
+// to terminal error deta hai: "No such file or directory"
+
+// clear:
+// Screen ko clean karne ke liye use hota hai

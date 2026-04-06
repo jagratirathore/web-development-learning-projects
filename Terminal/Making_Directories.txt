@@ -1,0 +1,10 @@
+// mkdir (make directory):
+// Ye command new folder (directory) create karne ke liye use hoti hai.
+
+// Example:
+// Desktop ke andar "delta" folder me 3 naye folders banana:
+
+// cd Desktop/delta
+// mkdir folder1 folder2 folder3
+
+// Isse delta folder ke andar ek saath 3 folders create ho jayenge.

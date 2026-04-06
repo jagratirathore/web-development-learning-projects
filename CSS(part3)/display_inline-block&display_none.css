@@ -1,0 +1,15 @@
+     /* or agr hm ko sb chaiye height ,weight to hm use krenge(display:inline-block) taaki elements style block ki tarha behave krega inline single line , ek or unique property hoti (display:none)->element ko gayab krna hota to use krte h hm; --> */
+     
+     div {
+         height: 200px;
+         width: 200px; 
+         background-color: greenyellow; 
+         border: 2px solid black; 
+         margin: 5px ;
+         display: inline-block;
+     }
+
+     /* display-none ->jisko dete vo hi  element gayab ho jata h*/
+     #third{
+        display: none;
+     }

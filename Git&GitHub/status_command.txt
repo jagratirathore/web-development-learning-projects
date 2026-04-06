@@ -1,0 +1,96 @@
+👇
+
+🔹 Status Command in Git
+
+git status command ka use hum code ki current state dekhne ke liye karte hain.
+
+👉 Jab bhi hum files me changes karte hain, unka status change hota rehta hai
+Aur ye command hume batata hai ki file kis state me hai.
+
+✅ Command:
+git status
+🔹 Real-Life Example (Letter)
+
+Socho tumne ek letter likha:
+
+Letter likha → normal state
+Envelope me daala + stamp lagaya → status change
+Post kar diya → final
+
+👉 Matlab letter ki ek life cycle hoti hai
+
+📌 Isi tarah Git me files ki bhi ek life cycle (states) hoti hai
+
+🔹 Git File Lifecycle
+Untracked → Unmodified → Modified → Staged → Unmodified (after commit)
+
+Ya detail me:
+
+Untracked --(git add)--> Staged  
+Staged --(git commit)--> Unmodified  
+Unmodified --(edit file)--> Modified  
+Modified --(git add)--> Staged  
+Staged --(commit)--> Unmodified  
+Unmodified --(remove file)--> Untracked
+🔹 Understanding Each State
+1️⃣ Untracked (New Files)
+Git ko pata hi nahi hota ki ye file exist karti hai
+Git is file ko track nahi kar raha hota
+
+👉 Agar tum is file ko Git ka part banana chahte ho:
+
+git add filename
+2️⃣ Unmodified (Tracked but No Changes)
+File Git ke control me hai
+Lekin abhi usme koi changes nahi hue
+
+👉 Ye normal state hoti hai (no changes)
+
+3️⃣ Modified
+Jab tum file me changes (edit/update) karte ho
+Tab file modified state me aa jaati hai
+4️⃣ Staged
+Jab tum git add karte ho
+Tab file staging area me aa jaati hai
+
+👉 Matlab:
+
+Ye file commit ke liye ready hai
+5️⃣ Commit (Back to Unmodified)
+Jab tum commit karte ho:
+git commit -m "message"
+
+👉 Tab:
+
+Changes permanently save ho jaate hain
+File fir se unmodified state me aa jaati hai
+🔹 Important Concept
+Git har chhote se chhote change ko track karta hai
+Lekin sirf un files ka jo tracked (add ki hui) hoti hain
+Untracked files ki history Git ke paas nahi hoti
+🔹 Check Status Example
+git status
+
+👉 Output me tum dekhoge:
+
+README.md → Modified (kyunki tumne usme changes kiye the)
+New files → Untracked
+🔹 Summary
+git status → current state batata hai
+File lifecycle hoti hai (Untracked → Modified → Staged → Commit)
+Git me changes save karne ke liye:
+👉 add + commit zaroori hai
+
+or
+
+status command: status command bhi hoti h hmare pass jo code ka status dikhaati h,jb bhi hm code ke andr kuch kuch changes krte h to hmare code ka status change hota h
+Ex-letter me kuch information daali phir usko envelop me daal ke stamp kr diya or phir post kr denge to vo letter ab normal letter nhi reh gya vo stamped letter bn jaayega mtlb ab uska status change ho gya normal se stamped letter or phir ab hm usko post kr skte h ese hi letter ki ek life cycle hoti 
+vese hi git ki file ke status ki bhi life cycle hoti h 
+untracked--(add the file)--unmodified--(edit the file)--modified--(stage the file)--staged then back to
+staged--(commit)--unmodified--(remove the file)--untracked
+
+file untracked(new files): it means nhi git ko nhi pata hota h ki ye file konsi h kisi ki h kya chal rha h(to git kya krta h changes ko history ko track krta h chote se chote change ko ki es file me ye change huva) but agr untracked file me store krenge to git khi bhi usko store nhi kra paayega q ki un file ki history git ke pass nhi h to agr hm chahte h git unko bhi track kre vo bhi part bne to hm add krte file ko then abhi vo tracked file nhi h unmodified file h then changes kiye hmne ab folder ke andr do file hoti h jo phele se exist krti or ek jo nai create ki hmne exist vaali file already track hogi to ye unmodified stage me bethi h jisme hmne abhi koi changes nhi kiye ye normal status h unmodifed stage purani filr tracke dh new file untracked h , or untrack ko track bnana hota h to usme add krta file ko or vo bhi modification stage me aa jaati h,ya to purani files h ya new files unko change krenge uske andr kuch changes(updation) krna chahte h hm to vo mofified ho jaati h,modified kre ke baad 2 step process hota h final krne ka - phele staged bnaate  file ko then hm unmodified bnaate commit kr ke ye ajeeb lg rhi hogi abhi lifecycle
+
+ status se check krte h hm folder ko
+ write in terminal-git status
+ modified me ream.md dikhegi q ki usme hm phele se changes kr chuke the

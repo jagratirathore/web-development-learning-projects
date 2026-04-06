@@ -1,0 +1,63 @@
+// #JSON : JavaScript Object Notation (www.json.org)
+
+// Note - JSON JavaScript ka part nahi hai, ye sirf ek format hai jisme data aata hai.
+// Kisi ko bhi data return karte hain to wo generally JSON format me hi aata hai.
+
+
+// -- JSON se pehle XML (Extensible Markup Language) me data hota tha.
+// Pehle API ka data XML format me aata tha, lekin ab mostly JSON me aata hai.
+// XML me custom tags hote hain jise hum khud bana sakte hain.
+// Ye kaafi similar hota hai HTML tags se.
+
+
+// XML Example -
+
+<?xml version="1.0" encoding="UTF-8"?>
+<EmployeeData>
+  <employee id="34594">
+    <firstName>Heather</firstName>
+    <lastName>Banks</lastName>
+    <hireDate>1/19/1998</hireDate>
+    <deptCode>BB001</deptCode>
+    <salary>72000</salary>
+  </employee>
+
+  <employee id="34593">
+    <firstName>Tina</firstName>
+    <lastName>Young</lastName>
+    <hireDate>4/1/2010</hireDate>
+    <deptCode>BB001</deptCode>
+    <salary>65000</salary>
+  </employee>
+</EmployeeData>
+
+
+// JSON Example -
+// Ye data kaafi similar hota hai JavaScript object ke, kyunki isme key-value pairs hote hain.
+// Ye dekhne me same lagta hai, lekin exactly same nahi hota.
+
+// Differences:
+// - JavaScript me keys string hona zaroori nahi hota
+// - JSON me saari keys string hoti hain
+// - JavaScript me undefined valid hai
+// - JSON me undefined allowed nahi hai
+
+// www.json.org par jaakar JSON ke baare me aur padh sakte hain.
+// Online bahut saare JSON validators hote hain jo check karte hain data valid hai ya nahi.
+// ese hm check bhi kr skte h ki jo data api se mil rha h vo valid json data h ya nhi?: Google par "JSON validator" search karke kisi bhi tool me JSON paste karke check kar sakte hain.
+
+{
+  "string": "hi",
+  "number": 2.5,
+  "boolean": true,
+  "null": null,
+  "object": {
+    "name": "Kyle",
+    "age": 24
+  },
+  "array": ["Hello", 5, false, null, { "key": "value", "number": 6 }],
+  "arrayOfObjects": [
+    { "name": "Jerry", "age": 28 },
+    { "name": "Sally", "age": 26 }
+  ]
+}

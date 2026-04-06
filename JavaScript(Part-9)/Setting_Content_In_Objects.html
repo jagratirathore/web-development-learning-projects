@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider-Man</title>
+    <link rel="stylesheet" href="Setting_Content_In_Objects.css" />
+  </head>
+  <body>
+    <h1>Spider Man</h1>
+    <img src="assets/spiderman_img.png" id="mainImg" />
+    <h2>About</h2>
+    <p>
+      <b>Spider-Man</b> is a superhero appearing in American comic books
+      published by
+      <a href="https://www.google.com/search?q=Marvel+Comics" style="display:none">Marvel Comics</a>.
+      Created by writer-editor <b>Stan Lee</b> and artist <b>Steve Ditko</b>, he
+      first appeared in the anthology comic book
+      <a href="https://www.google.com/search?q=Amazing+Fantasy"
+        >Amazing Fantasy</a
+      >
+      #15 (August 1962) in the <a href="#">Silver Age of Comic Books</a>. He has
+      been featured in comic books, television shows, films, video games,
+      novels, and plays
+    </p>
+
+    <div class="box">
+      <h4>Publication Info</h4>
+      <ul>
+        <li><a href="#" class="boxLink">Publisher</a></li>
+        <li><a href="#" class="boxLink">First Appearance</a></li>
+        <li>
+          Created by
+          <ul>
+            <li><a href="#" class="boxLink">Stan Lee</a></li>
+            <li><a href="#" class="boxLink">Steve Ditko</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Creation & Development</h2>
+    <p id="description">
+      In 1962, with the success of the Fantastic Four, Marvel Comics editor and
+      head writer Stan Lee was casting for a new superhero idea. He said the
+      idea for Spider-Man arose from a surge in teenage demand for comic books
+      and the desire to create a character with whom teens could identify. As
+      with Fantastic Four, Lee saw Spider-Man as an opportunity to "get out of
+      his system" what he felt was missing in comic books. In his autobiography,
+      Lee cites the non-superhuman pulp magazine crime fighter the Spider as a
+      great influence, and in a multitude of print and video interviews, Lee
+      stated he was further inspired by seeing a spider climb up a wall—adding
+      in his autobiography that he has told that story so often he has become
+      unsure of whether or not this is true.
+    </p>
+    <div class="images">
+      <img src="assets/creation_1.png" class="oldImg" />
+      <img src="assets/creation_2.jpeg" class="oldImg" />
+      <img src="assets/creation_3.jpeg" class="oldImg" />
+    </div>
+     <script src="Setting_Content_In_Objects.js"></script>
+
+  </body>
+</html>
+
+
+<!-- #Using Properties & Methods(sbhi objects ke andr generally hmko ye 3 properties dekhne milti hi h):
+
+~1)innerText(jitna bhi screen ke upr text dhikaai de rha h): shows the visible text contained in a node.
+~2)textContent(paragraph ke andr kuch chiz hidden h vo text bhi dikhata h pura content dikha ta h): Shows all the full text.
+~3)innerHTML(html markup pura dhikata h html ke and khi hmne bold tag to use nhi kiya internal styling to use nhi ki sb,koi anchor tag to use nhi kiya): Shows the full markup. -->
+
+<!-- difference:
+innertext-jo screen pe text dhikai deta vo dikhata h
+textcontent-jo hmne actual html file ke and likha ho,agr mene hide kiya h koi to bhi esme dhikega
+innerhtml-ye hmko pura html ka markup dhikata h -->

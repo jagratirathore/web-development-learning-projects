@@ -1,0 +1,9 @@
+#Get and post Requests:
+
+#Get
+~Used to get some response.
+~Data sent in query strings(limited,string data & visible in URL)
+
+#post
+~Used to post something (for Create /Write/Update)
+~Data sent via request body (any type of data)

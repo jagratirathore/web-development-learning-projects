@@ -1,0 +1,33 @@
+/* Media Queries->media features-width(main feature width hota h)(of viewport(browser ko bolte h jitni bhi chiz browser ke pass hoti h usko viewport bolte h hm))(hmare device ke particular features hote h jese environment(width,height,orientation(landscape mode ya portrate mode)) jiske though hm usko khol rhe h ) */
+
+/* jese hi media querie ki width 400px ke equal ho jaaye to background color change ho jaaye */
+/* @media(width:400px){
+    div{
+        background-color:red;
+    }
+} */
+
+
+/* @media(min-width:400px)->minimum width ya to 400 ho ya us se badi ho to eske andar jo bhi likha vo changes aana chaiye
+@media(max-width:400px)->maximum width ya to 400 ho ya us se choti ho to eske andar jo bhi likha vo changes aana chaiye 
+@media(min-width:200px)and(max-width:300px)->200 se 300 ke bich ki range me hoga to changes aayenge*/
+
+ h1{
+    background-color: yellow;
+    border: 2px solid black;
+ }
+
+ @media(width:400px){
+    h1{
+        background-color: red;
+        color: white;
+    }
+    /* div{
+        height: 100px;
+        width: 100px;
+        background-color: brown;
+    } */
+ }
+
+ /* output me koi change nhi aayega q ki abhi hmari width jada h agr me inspect kr ke width change krti hu to jese hi 400 hota vese hi hmara background color red hoga  or color bhi white hoga or agr hm div add krna chahte h us time to div bhi add kr skte h jese hi width 400 hogi vo div hmko dikhne lgega*/
+

@@ -1,0 +1,8 @@
+*{
+    /* google font-montserrat ->ka css link copy kiya h */
+    font-family: "Montserrat", sans-serif;
+     margin: 0; /* taaki sb side se hat jaaye space */
+     background-color: black;
+     color: white; /*jo bhi text likhenge sb white me aayega */
+     overflow: hidden;  /* hm puri website ko hide krenge overflow se serf main content ko scrollable bnaayenge baad me, (mtlb-content hmara box se bhaar jaa rha to vo hide ho jaayega hidden ki vjha se or hm usko scroll kr ke dekh bhi nhi smkte h),bhut saari propert hoti h overflow ki-visible,hidden,clip,scroll,auto (mdn website pe pd lo)*/
+ }

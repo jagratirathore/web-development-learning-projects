@@ -1,0 +1,59 @@
+/* Justify Content->browser ko btana ki main axis me space kese distribute hogi ye kam hota h justify content ko
+(use krte h child element(div) ke left or right vaali space ko control krne ke liye use krenge main axis ke(left to right or opposite,top to bottom or opposite) )
+Justify-content:flex-start;-->main axis  right(start)  to left(end) ja rha to
+Justify-content:flex-end;-->main axis  left(start)  to right(end) ja rha to
+Justify-content:flex-center;-->main axis me top to bottom arrange honge (bich me), (col)[or row me left to right (bich me)-dono height width ke acc jo child div ko di h]
+ or 
+
+justify-content:space-between;-->left se right me main axis me jitni bhi exta space h vo sb middle me chle jaayegi(bich me)  saari extra space flex item
+justify-content:space-around;-->jitni space middlle me thi uski adhi left me chle jaayegi space or aadhi right me
+justify-content:space-evenly;-->left or right space ko equal krna hota h to hm use krte j evenly(or equally) 
+
+*/
+
+ #container{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display:flex;
+ /* main axis-left to right */
+    flex-direction: row;
+/* to start mer hoga left me  div(element ka) */
+    /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+            /* justify-content: center; */
+
+
+
+/* main axis-right to left */
+    /* flex-direction: row-reverse; */
+/* to start mer hoga right me div(element ka)*/
+    /* justify-content: flex-start; */
+
+/* main axis- top to bottom */
+    /* flex-direction: column;
+    justify-content: flex-start; */
+
+/* main axis- bottom  to top*/
+    /* flex-direction: column-reverse;
+    justify-content: flex-start; */
+
+/* or */
+/* justify-content: space-between; */
+/* justify-content: space-around; */
+justify-content: space-evenly;
+   
+
+}
+h1{
+    text-align: center;
+}
+#container div{
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

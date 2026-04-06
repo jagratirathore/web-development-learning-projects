@@ -1,0 +1,7 @@
+
+    Conditional Statements->vo chiz jo ans me true de de ya false de de(real-life problems ko code me convert krte h condition ya true ya false hoti h)->if-else,nested if-else,switch
+
+    #condition-true ya false
+    example-vote(age>=18)
+    insta(status)-private ya public
+    

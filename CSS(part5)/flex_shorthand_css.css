@@ -1,0 +1,34 @@
+/* Flex shorthand->
+A)flex-grow(unitless h)|flex-shrink(unitless h)|flex-basis
+flex:2 2 100px;
+
+B)flex-grow|flex-basis
+flex:2 100px;
+
+C)flex-grow(unitless)
+flex:2;
+
+D)flex-basis
+flex:100px; */
+
+#container{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    /* flex shorthand */
+    flex:2 2 100px;
+}
+h1{
+    text-align: center;
+}
+#container div{
+    width: 100px;
+    height: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

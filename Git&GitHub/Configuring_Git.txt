@@ -1,0 +1,43 @@
+🔹 Configuring Git
+
+Git me kuch basic settings pehle se setup kar dena hi configuration kehlata hai.
+
+🔹 Why Configuration is Important?
+
+Sabse pehle Git ko yeh pata hona chahiye ki:
+
+Tum kis name se changes karna chahte ho
+Aur kis email ID se commits karna chahte ho
+
+Ye details har commit ke saath attach hoti hain.
+
+🔹 Git Configuration Commands
+
+Git ko configure karne ke liye hum git config command use karte hain.
+
+✅ Example:
+git config --global user.name "Jagrati Rathore"
+git config --global user.email "jagratirathore9575@gmail.com"
+🔹 Local vs Global Configuration
+Global (--global) → Yeh settings har repository ke liye same rahegi
+Local → Sirf ek specific repository ke liye apply hoti hai
+
+Agar tum chahte ho ki har jagah same username aur email use ho, to global configuration use karo.
+
+🔹 Check Configuration
+
+Agar tum apni Git configuration dekhna chahte ho, to command use karo:
+
+git config --list
+Isse saari configuration details show ho jaayegi
+credential.helper ko abhi ignore kar sakte ho
+🔹 Terminal Access
+
+Git commands run karne ke liye tum:
+
+Git Bash use kar sakte ho
+Ya VS Code ka terminal open karke bhi commands run kar sakte ho
+🔹 Simple Definition
+
+👉 Configuration ka matlab:
+Git ke andar apni personal information (name, email, etc.) store karna.

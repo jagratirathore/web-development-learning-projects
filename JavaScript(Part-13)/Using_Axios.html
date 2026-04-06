@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Using_Axios.css">
+</head>
+<body>
+    <h1>Get random cat facts</h1>
+    <button>Show new fact</button>
+    <p id="result"></p>
+
+    <!-- axios link-install -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+
+
+    <script src="Using_Axios.js"></script>
+
+</body>
+</html>
+<!-- #Axios(internally ye fetch ko hi use krti h but bol skte h ye ek or better tareka h request bhejne ka ) : Library to make HTTP requests,axios hmari library hoti jiske through hm apni http requests ko create krte h
+
+axios ek library h esko install kiya ja skta h-(browser pe axios daal ke npm link,cdn link(html ke andr include kr ke use kr skte iski link kok) kr ke library ko install kr skte h)
+using npm : npm install axios
+using cdn : <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+
+
+example-
+
+async function getFacts(){
+    try{
+        let res = await axios.get(url);
+        console.log(res);
+    }catch(e){
+        console.log("ERROR -",e);
+    }
+} -->

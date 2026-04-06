@@ -1,0 +1,9 @@
+app.use
+
+app.use((req,res)=>{
+    console.log("new incoming request");
+});
+
+
+
+#Sending a Response: request(req) or reponse(res)

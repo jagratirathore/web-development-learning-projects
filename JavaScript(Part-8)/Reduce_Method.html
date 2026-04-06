@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Reduce_Method.js"></script>
+</body>
+</html>
+<!-- #Reduce:Reduces the array to a single value.
+arr.reduce(reducer function with 2 variables for (accumulator,element));
+Example-
+[1,2,3,4].reduce((res,el)=>(res+el));
+10 
+
+Note-ye bhi reduce bhi ek(single) hi value return krta ye true false nhi deta (true ya false=>ye boolean value return nhi krta  ) kuch bhi value hoti vo ye jaruri nhi ki boolean hi value dega redue kuch bhi value de skta ye,hm decide krte ki final value kya honi chaiye hmari
+reducer-jis function ke and reduce krne ka logic hota usko reducer function bolte h(1 arg-accumulator bolte esko hm kuch bhi name de skte h jese (ans,result,a,b,c,d)or dusre arg2-ko element dete h esko hm kuch bhi name de skte h jese (el,a,b))
+
+//call krte hm acumulator ko to kese work krta h-ek ek kr ke element ke liye call hoga-array me[1,2,3]
+first time call kiya-> (acc,el)->return    ,eske baad vaale call me acc me as a input return chla jaayega 
+second time call kiya-> (acc,el)->return2      ,eske baad vaale call me acc me as a input return2 chla jaayega
+third time call kiya-> (acc,el)->return3      ,eske baad vaale call me acc me as a input return3 chla jaayega->or ye finally value aayegi return3 se esko (reduced)value bolenge hm
+
+
+note-Important:
+→ Reduce true/false return nahi karta.
+→ Ye koi bhi single final value return karta hai.
+-->

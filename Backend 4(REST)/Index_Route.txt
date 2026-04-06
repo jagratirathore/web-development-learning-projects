@@ -1,0 +1,7 @@
+#Implement: GET/posts
+Index Route
+GET   /Posts    to get data for all posts
+
+2 routes:-
+~ Serve the form        GET           /posts/new
+~ Add the new post      POST          /posts

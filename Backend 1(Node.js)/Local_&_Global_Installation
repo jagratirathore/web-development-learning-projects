@@ -1,0 +1,3 @@
+Local v/s Global:
+npm install -g <-package name->
+npm link <-package name->

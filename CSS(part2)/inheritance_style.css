@@ -1,0 +1,18 @@
+/* inheritance-> jo alreay upr element hota uska css le leta h jese grandparent then parent then chlid to child or parent ko css nhi bhi diya to vo grandparent ki uss le hi lega(ex-div or p or <ul> -to ul or p dono div ke background color ko le hi lega ),bs serf button nhi lete to unko apne ko inherit kr vana pdta h(or non-inherit hote h(width,height,border..)) */
+
+div{
+    background-color: yellow;
+}
+/* 
+form{
+    background-color: red;
+} */
+
+input{
+    background-color: inherit;
+}
+button{
+     background-color: inherit;
+}
+
+/* agar website bna na h to smjh nhi aa rha konsa color kis ke sath acha lge ga to hm google krte h->color palletes,canva,mycolor ((En sb se pata chal jata h ki konse color ka color plate acha lge ga ek heasing ek butoon ese sb lge ga pta chl jaayega esliye hmko khud se image krne ki jarurat nhi h))(width,height,border -> ko inherit kabhi nhi kr skte esliye esko specifc ke liye krna hoga) */

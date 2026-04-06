@@ -1,0 +1,11 @@
+New Operator: The new Operator lets developers create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+
+function Person(name,age){
+    this.name = name;
+    this.age = age;
+}
+Person.prototype.talk = function (){
+    console.log(`Hi, my name is ${this.name}`);
+};
+let p1 = new Person("adam",25);
+let p2 = new PErson("eve",2)5;

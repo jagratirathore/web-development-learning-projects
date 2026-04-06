@@ -1,0 +1,33 @@
+#outer{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: pink;
+    font-size: 20px;
+}
+
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    font-size: 2em;/*it means 20px*/
+    /* 2em->(pronunsation-m)or ye khelayega outer div se (2em)double font size,agr(3em)hota to triple khelata font size outer div se or (1.5)bhi kr skti me means half -ye outer div (parent relationship) with inner div(child relationship)*/
+    padding: 1em; /*(parent (font size) es se bhi aadhi padding ho gai(child ho gya)) */
+}
+
+button{
+    font-size: 50px;
+    border-radius: 15px;
+    border: 5px solid green;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Drawback of Em->Snowball effect in nested element(it means snow girta h jisme upr se jo gola girta h vo dhire dhire bada hone lgta h add ho ho ke snow esa hi em me hota h) */
+div{
+    /* font-size: 2em; */
+    font-size:2rem;
+}
+/* (parent(Section) se double size div1 us se double div2 us se double div3 ) */
+/* yahi property avoid krne ke liye rem(Root Em) aaya */
+/* rem->font size of root element relative me set krta h ye */

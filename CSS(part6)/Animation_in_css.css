@@ -1,0 +1,71 @@
+/* Animation->( element me more control ke liye use krte hm esko)ek state(from->me initial value likhte ,kha se ) se dusri state(to-me hm final value likhte jo animation ke bad chaiye,kha tb jaaye) me transform krne ko hm animation bolte h
+
+template of animation( blueprint)-syntax(myName -me kuch bhi likh skte h hm)
+@keyframes myName{
+    from{font-size:20px;}
+    to{font-size: 40px;}
+}
+    
+template ke baad hm css animation property likhte h(jisko de rhe uspe jese box ko to box ke anadar likhenge hm)-
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count->kitni baar animation dikhana chahte ho ek baar, ya do baar ,ya infinite(lgatar animation chlte rhega)
+animation-direction->normal(starting se ending dobara animation chlega),reverse(ending se starting animation chlega),alternate(phele starting to ending then ending to statrting jaayenge hm),alternate-re(sururat krega to do ke sath krega fir perform hota rhega)*/
+
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    
+    /* animation property */
+    /* animation-name: fontAnimation; */
+    /* animation-name: colorAnimate; */
+    animation-name: widthAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0 ;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+   /* animation-direction: normal; */
+        /* animation-direction: reverse; */
+              /* animation-direction: alterante; */
+                    animation-direction: alternate-reverse;
+
+
+
+} 
+
+/* jese meko eske font size pe animation  create krna to fontAnimation name de ke me krungi  */
+
+@keyframes fontAnimation{
+    from{
+        font-size:20px;
+    }
+    to{
+        font-size:40px
+    }
+
+}
+
+/* color change krne ke liye bhi kr skte h hm */
+@keyframes colorAnimate{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: aqua;
+    }
+}
+
+
+/* width ko animate krna chahte h hm agr to */
+@keyframes widthAnimate{
+    from{
+        width: 10px;
+    }
+    to{
+        width: 400px;
+    }
+}

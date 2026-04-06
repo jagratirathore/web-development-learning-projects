@@ -1,0 +1,4 @@
+Views Directory: 
+
+const path = require("path");
+app.set("views",path.join(_dirname,"/views"));

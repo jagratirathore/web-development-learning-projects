@@ -1,0 +1,27 @@
+/* Implement the following CSS for the given html document.
+Set font family of entire document to courier new
+Set text color for all h1 headings to #1b74e4
+Set background color of search button to black and text to white
+Set background color of login and signup button to aqua. */
+
+/* universal selector  */
+*{
+    font-family: courier New;
+}
+
+/* element selector*/
+h1{
+    color:#1b74e4;
+}
+
+/* id selector */
+#searchbtn{
+    background-color: black;
+    color: white;
+}
+
+/* class selector */
+.userbtn{
+    background-color: aqua;
+}
+

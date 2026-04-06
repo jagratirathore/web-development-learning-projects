@@ -1,0 +1,55 @@
+/* css transform-> es property ko use kr ke aap rotate(ghuma skte kisi point ke about),scale(4 ro direction me scale kr ke bda dikha skte h ,chota dikha skte h),skew(tilted kr skte h),or translate(x,or y axis ke around move kr skte) kr skte elements ko,pure element or content pe apply hota h transition transform agr kuch likha bhi h to vo bhi ulta ho jaayega 
+i)Rotate->transform:rotate(45deg),[(-45deg)->ult ho jaayega ye];-middle point center me hota h us se clockwise 45 degree me box ko move kr va rhe h hm , agr 90 degree rotate krte h hm to pura horizontal ->to vertical ho jata h ,complete rotate ke liye 180 degree set kr denge */
+
+section{
+    margin-top: 100px;
+}
+
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+div:nth-of-type(2n){
+    background-color:#f7db6a ;
+}
+
+div:nth-of-type(3n){
+    background-color:#ebb02d ;
+}
+/* transform */
+#one{
+    transform: rotate(45deg);
+}
+
+/* ii)scale->transform:scale(0.5);(jo size h box ka uska adha ho jaaye),transform:scale(2);-->jo size h vo size ka us se scale double ho jaaye esko (2D->x,y dono direction se bda diya ),(3D)pe dono apply h */
+#two{
+    /* x direction(0.5)me aadha ho jaaye ,or y direction me(2)to height or width me changes dekhne milenge  */
+    /* transform: scale(0.5,2); */
+        transform: scale(0.5);
+
+    /* or double krna ho sixe(1)->se to (2) kr denge */
+}
+/* 
+iii)translate ->(x ya y axis ke along move kr dena ->ye serf 2D plane me hoti h,3D me nhi hoti h) transform:translate(50px,50px);
+transform:translateX(10px);
+transform:translateY(10px);
+transform:translate(50px,50px) ;*/
+#three{
+    transform: translateX(-100px);
+    /* esko meko left direction me move kr vana box ko to(-100px)kr dungi */
+}
+
+/* iv)skew-teda krna thoda sa teda kiya to 30 deg right side teda hua or agr left side krna ho to -30 deg krna hota h to 30 degree  right side teda ho jata h,90 ya (-90deg)->kiya to us point se gayab hi ho jaayega pura el  >transform:skew(30deg); */
+#four{
+    transform: skew(30deg);
+}
+
+/* 4 ro property last box pe apply krege ek sath */
+#five{
+   transform: rotate(30deg) translateX(150px);
+}

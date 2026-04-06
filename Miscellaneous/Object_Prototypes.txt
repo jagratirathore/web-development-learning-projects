@@ -1,0 +1,8 @@
+#Object Prototypes: Prototypes are the mechanism by which javascript objects inherit features from one another.
+It is like a single template object that all objects inherit methods and properties from without having their own copy.
+
+arr._proto_(refernce)
+Array.prototype(actual object)
+String.prototype
+
+Note: Every object in JS has a built in property which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain.The chain  when we react a protoype that has null for its own protoype. 

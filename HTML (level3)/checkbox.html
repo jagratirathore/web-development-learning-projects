@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox_Document</title>
+</head>
+<body>
+    <form action="/action">
+    
+        <label for ="age">I am 18+? 
+        <input type="checkbox" id="age" placeholder="Enter age" name="age" />
+         <!-- <input type="checkbox" id="age" placeholder="Enter age" name="age" checked/>  yaha last me checked kr denge to always check rhega check box    -->
+        </label><br><br><hr>
+  
+        
+        <!-- radio button(sbhi me name=fruit same rakha h q ki ko bhi ek chose ho fruit or url me name=value me hota h(fruit = on)dikhega or agr value use krnege to url me vale bhi dikhegi name sahit jese ( fruit =litchi) ) -->
+        <!-- (group kiya h sbhi check box ko using same name) -->
+        <label for ="Apple">Apple
+        <input type="radio" id="Apple"  name="fruit" />
+        <label for ="Mango">Mango
+        <input type="radio" id="Mango"  name="fruit" />
+        <label for ="Pineapple">Pineapple
+        <input type="radio" id="Pineapple"  name="fruit" />
+        <label for ="Guava">Guava
+        <input type="radio" id="Guava"  name="fruit" />
+
+        <hr>
+        <label for ="Greenapple">Greenapple
+        <input type="radio" id="Greenapple"  name="fruit" value="Greenapple"/>
+        <label for ="Litchi">Litchi
+        <input type="radio" id="Litch"  name="fruit" value="Litchi"/>
+        <br><br>
+        <hr>
+          
+        <!-- dropdown-using(Select input element) -->
+        <div>Choose your Profession:
+        <select name="Profession" id="Profession">
+            <option value="student "selected>Student </option>
+            <option value="faculty">Faculty</option>
+            <option value="head">Head</option>
+            <option value="hod">HOD</option><!--agr phele se kuch selcted aaye to last me selected likh dungi phele se jese student pe likha h-->
+        </select>
+        </div>
+        <hr>
+
+        <!-- range (min-km se km 0 or max->jada se jada 100 step->10 ki steps me hi vol bdegi value->by defult phele se 50 rahegi fir aap km jada kr skte ho)-->
+         <label for ="volume">Choose Volume:
+         <input type="range" id="volume" name="volume"min="0" max="100" step="10" value="50"/>
+         </label><hr>
+        
+        <!-- textarea(for feedback ,comment) -->
+         <label for="Feedback">Give your valuable feedback:
+         <input type="text" id="Feedback" name="Feedback" rows="5" cols="5" placeholder="Enter your feedback here.."/>
+         </label>
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    /* google font-montserrat ->ka css link copy kiya h */
+    font-family: "Montserrat", sans-serif;
+     margin: 0; /* taaki sb side se hat jaaye space */
+     background-color: black;
+     color: white; /*jo bhi text likhenge sb white me aayega */
+     overflow: hidden;  /* hm puri website ko hide krenge overflow se serf main content ko scrollable bnaayenge baad me, (mtlb-content hmara box se bhaar jaa rha to vo hide ho jaayega hidden ki vjha se or hm usko scroll kr ke dekh bhi nhi smkte h),bhut saari propert hoti h overflow ki-visible,hidden,clip,scroll,auto (mdn website pe pd lo)*/
+ }
+
+ .main{
+    display: flex; /* overall hua h ye q ki main h(puri webiste)sb text side bar,main-menu,music-player sb ek ke baad ek aa jaayega ek row me without space -3 no nested div */
+    height:100vh;/* vh-viewport(jitni hmari screen ki height utni puri website le legi) */
+ }
+
+ .sidebar{
+  background-color:  red;   /*ye box left me aayega-bnega sidebar  */
+  width: 340px; /*breadth(wide) es box ki 340 px hogi*/
+  border-radius: 1rem;/*(edges->hmari round shape me aa jaayegi box ke,1rem=16px h esko hmne rem esliye liya q ki jese jese screen size chota krenge vo us form me aate jaayegi mtlb responsive ke liye)*/
+
+ }
+
+ .main-content{
+    background-color:  blue;  /*ye box right me aayega-bnega main-content */
+    flex:1; /*jitni sidebar ko jgha de di de di bhale mera size chota ho pr remaing saari vgha mujhe dedo*/
+    border-radius: 1rem;/*(edges->hmari round shape me aa jaayegi box ke,1rem=16px h esko hmne rem esliye liya q ki jese jese screen size chota krenge vo us form me aate jaayegi mtlb responsive ke liye)*/
+    overflow: auto;/*overflow mtlb jb content jada ho jaayega main-content me to (auto->mtlb scroll bar hmesha nhi dikhai dega serf jb jarurat hogi tb dikhai dega(mtlb jb niche ke content ko dekhna ho to))*/
+ }
+
+ .music-player{
+     background-color:  yellow; /*ye box bottom me aayega-bnega music-player */
+     position:fixed; /*jo hmara music player h eski position hmko [bottom(niche)->to esko bhi 0 krenge] me fixed chaiye */
+     bottom:0; /*position bottom(niche)fix kri to 0*/
+     width:100%; /*es box ko breadth(chodaai,wide)puri dena h screensize itni to 100% kr denge hm*/
+     height: 72px;/*inspect kr ke dekha to bta chla spotify ki website pe height *72 px h eski*/
+ }

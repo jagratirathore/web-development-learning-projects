@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Todo App</h1>
+    <input placeholder="Enter your tasks">
+    <button>Add Task</button>
+    <ul>
+        <li>Eat <button class="delete">delete</button></li>
+        <li>Sleep <button class="delete">delete</button></li>
+    </ul>
+  <script src="Event_Delegation.js"></script>  
+</body>
+</html>
+<!-- 
+Event Delegation:
+
+Jab hum event listener kisi element par lagate hain, to wo sirf un elements par apply hota hai jo page load ke time exist karte hain.
+
+Agar baad me naye elements dynamically create hote hain, to un par event listener automatically apply nahi hota.
+
+Is problem ko solve karne ke liye hum parent element par event listener lagate hain, jise Event Delegation kehte hain.
+
+Isse existing aur dynamically added dono elements par event work karta hai. -->

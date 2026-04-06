@@ -1,0 +1,46 @@
+/*flex sizing->(container ke andar extra space h to uske andar ke element ko grow(item size bdana) or shrink(item size ghatana) kr skte h using this flex sizing)
+
+Flex-basis->It sets the initial main size of a flex item.
+flex-basis:100px;
+
+Flex-grow:1;
+flex grow kre factor 1 se vhi size or 2 krenge to double ho jaayega jo size di h us se ese 3,4 kr skte h
+
+Flex-shrink:1;
+(jb element or items ka overlflow hoga tbhi dekh paayenge otherwise nhi hm)->to width bdaane ki jarurat pdegi esme 
+
+ min-width:400px;
+ max-width:200px;*/
+
+#container{
+    height: 300px;
+    width: 60%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#blue{
+    /* min-width: 400px; */
+    flex-shrink: 3;
+}
+
+#orange{
+ align-self: flex-start;
+ flex-basis: 300px;
+ flex-grow: 4;
+}
+
+h1{
+    text-align: center;
+}
+#container div{
+    width: 100px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

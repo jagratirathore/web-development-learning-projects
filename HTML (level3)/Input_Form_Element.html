@@ -1,0 +1,65 @@
+<!-- <action></action>->jb submit krne to vo action perform ho jaayega url pe show hoga jese /server
+
+<form></form>->ye starting process hoti h form bna ne ke liye blank page
+
+<label></label>->hm label or id ka use hi concatenation(add)krne ke liye use krte h dono field ko
+
+for->kis liye label use kr rhe jese  username,lastname,firstname
+
+<input type=""/>->text,number,password,checkbox(serf yahi data leta h),automatic text field generate krta h or uspe khi bhi likh skte h
+
+placeholder->infomation dene ke liye ki likhna kya h textfield pe
+
+id->label or textfield ko join krne ke liye taaki username pe bhi click kre to vo automatic textfield pe aa jaaye
+
+name->it shows that we write in text field that information in url when we submit form
+
+<button type=""></button>->submit,reset,button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/server">
+    
+    <div>
+        <label for="firstname">Username: </label>
+        <input type="text" placeholder="Enter Firstname" id="firstname" name="firstname"/>
+    </div><br>
+
+    <div>
+        <label for="lastname">Lastname: </label>
+        <input type="text" placeholder="Enter lastname" id="lastname" name="lastname"/>
+    </div><br>
+
+    <div>
+        <label for="password">Password: </label>
+        <input type="password" placeholder="Enter Password" id="password" name="password"/>
+    </div><br>
+
+    <div>
+        <label for="number">Number: </label>
+        <input type="number" placeholder="Enter Contact Number" id="number" name="number"/>
+    </div><br>
+
+
+    <div>
+        <label for="age">Age: </label>
+        <input type="number" placeholder="Enter Age" id="age" name="age"/>
+    </div><br>
+
+    <button type="submit">Submit</button>
+    <button type="button">Button</button>
+    <button type="reset">Reset</button>
+
+    <!-- using input bhi hm button create kr skte h pr ye accha way nhi hota or type dete to upr automatic aa jata button pe or usko change krna hota to value use krte h -->
+    <input type="button" value="Button 1 "/>
+    <input type="submit" value="Submit 2 "/>
+
+    </form>
+    </body>
+    </html>

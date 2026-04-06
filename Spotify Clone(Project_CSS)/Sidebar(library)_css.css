@@ -1,0 +1,101 @@
+*{
+    /* google font-montserrat ->ka css link copy kiya h */
+    font-family: "Montserrat", sans-serif;
+     margin: 0; /* taaki sb side se hat jaaye space */
+     background-color: black;
+     color: white; /*jo bhi text likhenge sb white me aayega */
+     overflow: hidden;  /* hm puri website ko hide krenge overflow se serf main content ko scrollable bnaayenge baad me, (mtlb-content hmara box se bhaar jaa rha to vo hide ho jaayega hidden ki vjha se or hm usko scroll kr ke dekh bhi nhi smkte h),bhut saari propert hoti h overflow ki-visible,hidden,clip,scroll,auto (mdn website pe pd lo)*/
+ }
+
+ .main{
+    display: flex; /* overall hua h ye q ki main h(puri webiste)sb text side bar,main-menu,music-player sb ek ke baad ek aa jaayega ek row me without space -3 no nested div */
+    height:100vh;/* vh-viewport(jitni hmari screen ki height utni puri website le legi) */
+    padding:0.5rem; /*bhut jada hi chipka huva tha to thodi breathing apace de di screen se dur hone ke liye*/
+}
+
+ .sidebar{
+  background-color:green;   /*ye box left me aayega-bnega sidebar  */
+  width: 340px; /*breadth(wide) es box ki 340 px hogi*/
+  border-radius: 1rem;/*(edges->hmari round shape me aa jaayegi box ke,1rem=16px h esko hmne rem esliye liya q ki jese jese screen size chota krenge vo us form me aate jaayegi mtlb responsive ke liye)*/
+
+ }
+
+ .main-content{
+    background-color:  black;  /*ye box right me aayega-bnega main-content */
+    flex:1; /*jitni sidebar ko jgha de di de di bhale mera size chota ho pr remaing saari vgha mujhe dedo*/
+    border-radius: 1rem;/*(edges->hmari round shape me aa jaayegi box ke,1rem=16px h esko hmne rem esliye liya q ki jese jese screen size chota krenge vo us form me aate jaayegi mtlb responsive ke liye)*/
+    overflow: auto;/*overflow mtlb jb content jada ho jaayega main-content me to (auto->mtlb scroll bar hmesha nhi dikhai dega serf jb jarurat hogi tb dikhai dega(mtlb jb niche ke content ko dekhna ho to))*/
+ }
+
+ .music-player{
+     background-color:  black; /*ye box bottom me aayega-bnega music-player */
+     position:fixed; /*jo hmara music player h eski position hmko [bottom(niche)->to esko bhi 0 krenge] me fixed chaiye */
+     bottom:0; /*position bottom(niche)fix kri to 0*/
+     width:100%; /*es box ko breadth(chodaai,wide)puri dena h screensize itni to 100% kr denge hm*/
+     height: 72px;/*inspect kr ke dekha to bta chla spotify ki website pe height *72 px h eski*/
+ }
+ 
+ /* sidebar me anchor tag ki underline (none)hat jaaye or color change kr denge website ke acc jo usme ho color text ke vo */
+ a{
+   text-decoration: none;
+   color:#fff
+ }
+ /*sidebar me nav h ->us div(box)ka background color change kr denge hm acc to website of spotify*/
+ .nav{
+  background-color:#121212;
+  border-radius: 1rem;/*(edges->hmari round shape me aa jaayegi box ke,1rem=16px h esko hmne rem esliye liya q ki jese jese screen size chota krenge vo us form me aate jaayegi mtlb responsive ke liye)*/
+  display: flex;/*dono div h ye ek line me(horizontal) aa jaate h ek ke baad(vertical) ek to hmko to -ek ke niche ek chaye to hm flex ki direction oppisite kr denge(flex-direction: col ,kr ke)*/ 
+  flex-direction: column;
+  justify-content: center;/*vertically hmara sara content center me aa jaaye to hm use krte h ye*/
+  height:100px ;/*box ki height approx itni h inspect ke ke dekha*/
+  padding: 0.5rem 0.75rem; /*inspect me box model me dekhenge to paading 8px dono side which is equals to 0.5rem ,or left right ki -12px which is equals to 0.75rem*/
+ }
+
+ .nav-option{
+    line-height:2.5rem;
+     /* agr hm nav baar pe hover krte to vo thoda sa bright ho jaata h->to hm opacity denge 0.7 */
+     opacity:0.7;
+     padding: 0.5rem 0.75rem;/*left right ki thodi or padding bda dete h hm*/
+ }
+ .nav-option:hover{/*jb cursor ko uspe le jaayenge to vo change hoga uski opacity-1*/
+    opacity:1;/*to higlighted dikhne lge ga anchor text ka text*/
+ }
+ .nav-option i{ /*i=icon*/
+    font-size: 1.25rem;
+ }
+ .nav-option a{/*a=anchor tag*/
+    font-size: 1 rem;
+    margin-left: 1rem;/*thoda extra space add krna icon or text me library ki*/
+ }
+ 
+ .library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;/*bachi huvi puri height aa jaayegi */
+    margin-top:0.5rem;
+    padding: 0.5rem 0.75rem;
+ }
+ .options{
+    display: flex;
+    justify-content: space-between;/*hmaari aadhi chiz left pe hi reh jaayegi or aadhi chiz right pe aa jaayegi(+or->)*/
+    vertical-align: center;/*same line pe saari chiz center ho ke aa jaayegi*/
+ }
+
+ .lib-option img{
+    height: 1.25rem;
+    width:1.25reml
+ }
+
+ .icons{
+    font-size: 1rem;
+    display: flex;
+ }
+
+ .icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+    margin-top: 1rem;
+ }
+ .icons i:hover{
+    opacity: 1;
+ }

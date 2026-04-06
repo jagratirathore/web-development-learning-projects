@@ -1,0 +1,126 @@
+Example: Adding New Feature using Branch (Step-by-Step)
+🟢 Step 1: Create File & Add Feature
+
+👉 Agar tumne project2 me VS Code ke andar app.js file banayi:
+
+// app.js
+// Add new feature
+// This project was created from local system
+// Created by Jagrati Rathore
+🟢 Step 2: Check Status
+git status
+
+📌 Output:
+
+Untracked file: app.js
+
+✔️ Matlab Git abhi is file ko track nahi kar raha
+
+🟢 Step 3: Add & Commit
+git add .
+git commit -m "Add new feature"
+
+✔️ Ab file Git me save (commit) ho gayi
+
+🟢 Step 4: Switch to Main Branch
+git checkout main
+git branch
+
+✔️ Check kar liya ki tum main branch par ho
+
+🟢 Step 5: Push Main Branch
+git push
+
+📌 Output:
+
+Everything up-to-date
+
+✔️ Kyunki tumne feature branch ka code abhi push nahi kiya
+
+🟢 Step 6: Switch to Feature Branch
+git checkout feature
+🟢 Step 7: Push Feature Branch
+git push
+
+📌 Error:
+
+The current branch has no upstream branch
+
+✔️ Iska matlab: GitHub par ye branch abhi exist nahi karti
+
+🟢 Step 8: Set Upstream & Push
+git push --set-upstream origin feature
+
+✔️ Ab feature branch GitHub par upload ho jaayegi
+
+📌 GitHub refresh karne par:
+
+main branch
+feature branch
+👉 dono dikhengi
+🔹 Merging Code (Feature → Main)
+🟢 Method 1: Using Git Commands
+Compare Branches:
+git diff main
+Merge:
+git checkout main
+git merge feature
+
+✔️ Feature branch ka code main me aa jaayega
+
+🟢 Method 2: Using Pull Request (PR) ⭐ (Recommended)
+
+👉 PR = Pull Request
+👉 Ye GitHub ka feature hai jisse tum apne changes review ke liye bhejte ho
+
+🔹 Pull Request Steps
+GitHub par Compare & Pull Request button click karo
+Page me dikhega:
+base: main  ←  compare: feature
+
+✔️ Matlab: feature branch ko main me merge karna hai
+
+🔹 Add Details
+
+👉 Title:
+
+Added new feature
+
+👉 Description:
+
+Why this feature is added
+What changes are done
+
+✔️ Team members ko samajh aata hai
+
+🔹 Code Review
+Junior/Senior developers code check karte hain
+Agar mistake hai → fix karne bolte hain
+Agar no conflict → merge allow
+🔹 Merge Pull Request
+
+👉 Click:
+
+Merge Pull Request
+Confirm Merge
+
+✔️ Important:
+👉 1 PR merge = 1 commit
+
+📌 Output:
+
+Pull request successfully merged and closed
+🟢 Step: Delete Feature Branch (Optional)
+
+👉 Merge ke baad:
+
+git branch -d feature
+
+✔️ Ya GitHub se bhi delete kar sakte ho
+
+🔹 Final Flow Summary
+Create file → git add → git commit  
+→ git checkout feature  
+→ git push origin feature  
+→ Create PR  
+→ Review → Merge → Done

@@ -1,0 +1,26 @@
+// Basics commands:
+
+// ls (list):
+// Current directory (folder) ke andar jitni bhi files aur folders hote hain,
+// un sabki list show karta hai.
+
+// pwd (print working directory):
+// Ye batata hai ki hum abhi kis location/folder me kaam kar rahe hain.
+// (Current working directory ka path show karta hai)
+
+// clear:
+// Terminal screen ko clean karta hai (purani output remove kar deta hai)
+
+// ~ (tilde symbol):
+// Ye home directory ko represent karta hai.
+// Example: user ka home folder (Jagrati / HP) jisme Desktop, Downloads, Videos, etc. hote hain.
+
+// Note:
+// Up arrow key (↑):
+// Pehle run ki hui commands ko wapas laane ke liye use hoti hai.
+
+// Down arrow key (↓):
+// Next (recent) commands dekhne ke liye use hoti hai.
+
+// Agar hume baar-baar koi command run karni ho,
+// to hum arrow keys ka use karke easily usse repeat kar sakte hain.

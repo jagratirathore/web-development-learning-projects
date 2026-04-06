@@ -1,0 +1,37 @@
+/* Flex direction->It sets how items are placed in the flex container,along which axis and direction.
+
+Flexbox-direction:row; --> main axis(horizontal jaayega)-left to right,cross axis(vertical jaayega),direction(--->)
+Flexbox-direction:row-reverse; --> main axis,  right to left, direction(<---)
+Flexbox-direction:column; --> cross axis(horizontal jaayega),main axis(vertical jaayega)-top to bottom,direction(|  top se niche)
+Flexbox-direction:column-reverse; --> main axis,bottom to top, direction(| niche se upr)
+
+ */
+
+ #container{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display:flex;
+
+    flex-direction: row;
+    /* right to left main axis bnana h->mtlb ulta krna h sbhi div ko to kr dungi using row-revere */
+    /* flex-direction: row-reverse;
+    flex-direction: col;
+    flex-direction: col-reverse;
+ */
+
+
+
+}
+h1{
+    text-align: center;
+}
+#container div{
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

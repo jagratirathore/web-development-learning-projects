@@ -1,0 +1,82 @@
+
+
+
+
+
+//jo hmne hmare computer pe changes kiye add or commit kr ke vhi changes hmare github account pe bhi dikhna chaiye uske liye hm push command ka use krenge.
+push command: eska kaam hota h local repository ka jitna bhi content h vo remote repository(Ex-system se github acc me sb repo bhejna chahte h hm)
+to likhenge: git push origin main
+git push(dhaka maar ke hmare comments ko github pe bhej dena)
+origin(hmari jagha ka name h,kha hm ye saari chiz bhejna cha rhe h vo hmara origin h) 
+main(ye hmari brach ka name h)
+to likhenge-
+git push origin main
+
+//first time me push krne ki kosish kr rhe h to ek popup aayega usko allow krenge hm to aayega authorize vs code usko click krenge then open vs code or es tarah push kr diya hmne or phir refresh krenge to jo changes hmne local system pe hmare vs me ki ab hm notice krenge ki jo files vs code me dikhai de rhi thi vo sb index.htmk,style.css sb delta-demo me dikhai dene lagi h -or dikh bhi rha h ki 3 commits and add new files github pe
+or language bhi tack kr lega github ke abhi tk jitna bhi code aapne likha h vo 100 % html se related h
+
+or
+
+🔹 Push Command in Git
+
+👉 Jo changes humne apne local system (computer) par kiye hain
+(add + commit ke baad),
+wo changes GitHub (remote repository) par bhi dikhne chahiye.
+
+✔️ Iske liye hum push command ka use karte hain.
+
+🔹 What is Push?
+
+Push ka kaam:
+Local repository ke saare commits ko remote repository (GitHub) par upload karna.
+
+👉 Example:
+
+System (local) → GitHub account (remote)
+🔹 Syntax
+git push origin main
+🔹 Meaning of Each Term
+git push → Local changes ko GitHub par bhejna (push karna)
+origin → Remote repository ka naam (default name hota hai GitHub repo ka)
+main → Branch ka naam jahan hum changes push kar rahe hain
+🔹 First Time Push (Important)
+
+👉 Jab tum first time push karte ho:
+
+Ek popup / authorization window open hoti hai
+Tumhe Allow / Authorize karna hota hai
+VS Code ko GitHub access dena padta hai
+
+✔️ Uske baad successfully push ho jaata hai
+
+🔹 After Push
+
+👉 GitHub par jaakar page refresh karo:
+
+Jo files tumne VS Code me banayi thi:
+index.html
+style.css
+README.md
+
+✔️ Sab repository me dikhne lagenge (e.g., delta-demo folder ke andar)
+
+🔹 Commit History on GitHub
+GitHub par tumhe dikh jaayega:
+Number of commits (e.g., 3 commits)
+Last commit message (e.g., “Added new files”)
+🔹 Language Detection
+
+👉 GitHub automatically detect karta hai:
+
+Tumne kaunsi language use ki hai
+
+✔️ Example:
+
+Agar tumne mostly HTML code likha hai
+→ GitHub dikhayega 100% HTML
+🔹 Simple Understanding
+
+👉 git push =
+“Apne local changes ko GitHub par bhejna (upload karna)”
+
+Agar chaho to mai next “pull command + full Git cycle (diagram + flow)” bhi bana dungi 👍

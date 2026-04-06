@@ -1,0 +1,78 @@
+🔹 Merge Conflicts
+👉 Definition:
+
+Merge Conflict ek situation hoti hai jab Git automatically decide nahi kar pata ki do commits (branches) ke changes me se kaunsa sahi hai.
+
+🔹 Conflict Syntax (Git kya dikhata hai)
+<<<<<<< HEAD   (Current Change - current branch)
+Adding a new change - feature
+=======
+Adding a new change - main
+>>>>>>> main   (Incoming Change)
+
+✔️ HEAD → current branch ka code
+✔️ main → dusri branch ka code
+
+🔹 Simple Meaning
+
+👉 Jab 2 branches me same file ki same jagah change hota hai,
+to Git confuse ho jata hai → Merge Conflict create hota hai
+
+🔹 Example (Real Scenario)
+🟢 Feature Branch:
+// app.js
+// Adding new feature - form
+🟢 Main Branch:
+// app.js
+// Adding new feature - button
+
+👉 Dono ne same file (app.js) me change kiya
+👉 Ab merge karte time conflict aayega
+
+🔹 Steps to Reproduce Conflict
+git branch
+git add .
+git commit -m "Add new form"
+git checkout main
+git merge feature
+
+❌ Output:
+
+Automatic merge failed; fix conflicts and then commit the result.
+🔹 How to Resolve Conflict (VS Code)
+
+👉 VS Code automatically options deta hai:
+
+Options:
+Accept Current Change (sirf main ka code)
+Accept Incoming Change (sirf feature ka code)
+Accept Both Changes (dono rakhna) ✅
+Compare Changes
+🔹 Example Resolution (Both Changes)
+// app.js
+// Adding new feature - button
+// Adding new feature - form
+
+✔️ Dono features rakh liye
+
+🔹 Final Steps After Resolving
+git add .
+git commit -m "Merge feature into main and resolved conflict"
+git push origin main
+
+✔️ Conflict solve ho gaya
+✔️ Code successfully merge ho gaya
+
+🔹 Important Points
+Conflict tab aata hai jab same line modify hoti hai
+Git khud solve nahi kar pata → manual intervention chahiye
+VS Code help karta hai easy resolve karne me
+🔹 Final Summary
+git merge feature   # merge start
+# conflict occurs
+# resolve manually
+git add .
+git commit -m "resolved conflict"
+git push origin main
+
+Agar chaho to mai merge conflict ka diagram (before vs after merge) bhi bana dungi jo exam me perfect lagega 👍

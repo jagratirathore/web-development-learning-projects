@@ -1,0 +1,52 @@
+Simon Game ek memory game hota hai jisme player ko colors ya buttons ka sequence yaad rakhkar same order me repeat karna hota hai. Jaise-jaise level badhta hai, sequence bhi bada hota jata hai.
+Simon Game kaise khelte hain (Roman Hindi)
+
+1. Game Start
+Game start karne ke liye player koi bhi key press karta hai ya start button dabata hai.
+Game Level 1 se start hota hai.
+
+2. Level 1
+Computer ek random color/button flash karta hai (maan lo: Red).
+Player ko same button press karna hota hai.
+
+Example:
+Computer: Red
+Player: Red
+Agar sahi press kiya → next level
+
+3. Level 2
+Ab computer pehle wala color + ek naya color show karta hai.
+
+Example:
+Computer: Red → Blue
+Player ko same order me press karna hai:
+Player: Red → Blue
+Agar sahi hua → Level 3
+
+4. Level 3
+Ab sequence aur bada ho jayega.
+
+Example:
+Computer: Red → Blue → Green
+Player ko press karna hoga:
+Player: Red → Blue → Green
+
+5. Levels aise hi badhte rehte hain
+Har level me:
+Computer ek naya random color add karta hai
+Player ko poora sequence yaad rakhkar repeat karna hota hai
+
+Example:
+Level 4
+Computer: Red → Blue → Green → Yellow
+
+6. Game Over
+Agar player galat button press kar deta hai:
+Game over ho jata hai
+Screen par Game Over ya score show hota hai
+Player restart karke fir se Level 1 se start karta hai
+Simon Game me main concepts
+
+Memory test
+Pattern yaad rakhna
+Har level me difficulty increase

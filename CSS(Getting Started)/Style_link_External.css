@@ -1,0 +1,18 @@
+ h1{
+            color:rgb(180, 104, 104);
+            background-color: rgb(245, 142, 16);
+        }
+
+    p{
+         color:rgb(74, 163, 74);
+         background-color:rgb(240, 34, 240);
+        
+    }
+
+    button{
+        /* color-forground(upar text ke liye) */
+         color:rgb(22, 14, 14);
+          /* background */
+         background-color: grey
+
+    }

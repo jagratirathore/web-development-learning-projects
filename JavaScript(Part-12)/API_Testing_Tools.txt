@@ -1,0 +1,12 @@
+
+<!-- #Testing API requests: APIs request ko test kese kr skte h ? to hmne abhi tk jo sikha vo ese sikha ki browser pe ja ke search ki url jese https://catfact.ninja/fact then APIs ne reponse de diya json me but ese testing nhi ki jaati APIs ki tools hote h APIs ko test krne ke jese- or ye tools user ke liye nhi  generally developers ke liye hote h
+Tools:
+1)Hoppscoth: ye online exist krta h .Advantage:koi bhi download nhi krna hota h 
+2)Postman : ye kaafi purana tool h testing krne ka APIs ko esme problem ye hi ki esko download krna pdta h use krne ke liye esko signup krna hota h-->
+
+<!-- note: dono hi tool ka same kaam h interface bhi same h dono APIs texting ke liye hi use hota h to jo mn kre aap use kr skte h jo aapke pass available h already download h to postman kr lo use or nhi to Hoppscoth -koi problem nhi aayegi dono me same kaam hota h user interface(UI) bhi same h dono tools ki-->
+
+<!-- how to use Hoppscoth: -->
+<!-- browser pe ja ke Hoppscoth pe enter krenge or open ho jaayegi hmari website phir hm esko bina login/signup ke bhi use kr skte h-url likha h vha hm hmare end points paste krenge jese hm abhi get use kr rhe or url pe : https://catfact.ninja/fact  or send pe click krenge vese hi hmari APIs request gai or response me status me 200 ok or json valid fomat aa jaayega or hm eshi hmari bhut saari apis ke sath try kr skte h ex-(https://dog.ceo/api/breeds/image/random)or esme random dog ki image aayegi reponse me json format me us link ko copy kr ke hm browser pe paste krenge to json me aai h dog apis call krne pe to hr baar differnet random dog ki link aayegi or copy  kr ke link ko hm browser me dekh bhi skte h-->
+
+<!-- note:APIs ek endpoint url h  -->

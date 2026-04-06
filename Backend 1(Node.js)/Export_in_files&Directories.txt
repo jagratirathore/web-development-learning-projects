@@ -1,0 +1,7 @@
+module.exports: requiring Files
+require() : a built-in function to include external modules that exist in separate files.
+module.exports : a special object
+
+module.exports: requiring directories
+require() : a built-in function to include external modules that exist in separate files.
+module.exports : a special object

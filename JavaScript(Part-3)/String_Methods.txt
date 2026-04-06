@@ -1,0 +1,14 @@
+String MEthods-actions that can be performed on objects.
+t
+
+#Format of method-
+stringName.method()
+
+Ex-stringName.length()
+
+Aleady we used this methods previous-
+1)console.log()-ye print krvaane ka kaam krta h console pe 
+2)alert()-ye popup box deta h
+3)prompt()-ye use krte h hm input lene ke liye
+
+

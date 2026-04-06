@@ -1,0 +1,6 @@
+Implement:  /posts/:id
+Dsetroy Route
+
+
+DELETE     /posts/:id    to delete specific post
+

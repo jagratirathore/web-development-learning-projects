@@ -1,0 +1,6 @@
+Path Parameters: req.params
+
+app.get("/ig/:username",(req,res)=>{
+    let{username}=req.params;
+    res.send(`This account belongs to @${username}`);
+});

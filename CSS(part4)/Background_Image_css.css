@@ -1,0 +1,16 @@
+/* background-image->set krna image background pe proper tareke se
+background-image:url(".../somepath/..img.jpg");
+
+image fit nhi hoti according to background size to hmko ye fix krna hi pdta h jo bachti space usme vo fir aadhi or lga deta image automatic,or km bachti space to aadhi kr dete image ko esliye esko set krna imp hota h
+background-size:contain(na crop krnge img ko na scale -repeat kr denge img ko)/cover(Crop kr denge but scale nhi krenge/auto(stretch/or khich denge img ko); */
+
+div{
+    width: 400px;
+    height: 200px;
+    background-color: #7aa874;
+    margin: 10px auto ;
+    background-image: url("Background_Image1.jpeg");
+    /* background-size: contain; */
+    background-size: cover;
+    /* background-size: auto; */
+}   

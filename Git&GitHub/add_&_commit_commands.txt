@@ -1,0 +1,117 @@
+Basic Commands:
+~add: adds new or changed files in your working directory to the Git staging area.  (git add<-file name->)
+~commit: it is the record of change  (git commit -m "some message")
+~push: upload local repo content to remote repo   (git push origin main)
+
+🔹 Basic Git Commands
+
+add → Working directory ki new ya modified files ko staging area me le jaata hai
+
+git add <file-name>
+
+commit → Changes ka record/save point banata hai
+
+git commit -m "message"
+
+push → Local repository ke commits ko remote repository (GitHub) par upload karta hai
+
+git push origin main
+🔹 How to Finalize Changes?
+
+👉 Jab hum project me:
+
+New files create karte hain
+Ya existing files me changes karte hain
+
+To un changes ko final karne ke liye 2-step process hota hai:
+
+Add → Commit
+🔹 Step 1: Add (Staging Area)
+
+👉 Chahe:
+
+Tumne new file banayi ho
+Ya purani file modify ki ho
+
+Unhe working directory se staging area me le jaana hota hai.
+
+📌 Flow:
+
+Working Directory → Staging Area → Commit
+✅ Example:
+git add index.html
+
+👉 Isse:
+
+File staged ho jaati hai
+git status me “Changes to be committed” me dikhai degi
+🔹 Add All Files at Once
+
+Agar sab files ek saath add karni ho:
+
+git add .
+
+👉 . ka matlab → current folder ki sab files
+
+Check karne ke liye:
+
+git status
+
+👉 Output:
+
+README.md
+index.html
+style.css
+sab “Changes to be committed” me aa jaayengi
+🔹 Real-Life Example (Letter)
+Modified file = letter likh diya
+git add = envelope me daal diya (ready hai)
+git commit = stamp laga diya (final ho gaya)
+🔹 Step 2: Commit
+
+👉 Commit ka matlab hai:
+
+Changes ka permanent record banana
+✅ Syntax:
+git commit -m "some message"
+
+👉 Message me hamesha likho:
+
+Tumne kya changes kiye
+Example:
+git commit -m "Added new files"
+🔹 After Commit
+
+Jab tum git status check karoge:
+
+git status
+
+👉 Output milega:
+
+On branch main
+Nothing to commit, working tree clean
+
+✔️ Matlab:
+
+Saare changes successfully save ho chuke hain
+Files normal state me aa jaati hain (yellow → normal)
+🔹 Important Points
+Commit ek meaningful set of changes hona chahiye
+Chhote-chhote changes ko add karke ek proper commit bana sakte ho
+Git ab tumhare changes ko yaad rakhta hai (version control)
+🔹 Next Step (Push)
+
+👉 Ab local commits ko GitHub par bhejne ke liye:
+
+git push origin main
+
+Agar chaho to mai next “git push + pull + full GitHub connection flow” bhi same easy style me bana dungi 👍
+
+
+or
+
+//ab hm en changes ko final kese kre nai file bna li hmne project ke andr changes kaafi kr diya ab hm commit kese kre esko to commit ke liye 2 step proccess hoti h phele add krna then commit krna jb surat me hmare pass modified files hoti h to unka state change ho ke ho jaata h staged(letter ke and message likh diya abhi stamp nhi lga) then hm add krne ke baad commit krenge to final change (letter me stamp lg jaayega or final ho jaayega)
+//how to add: ya bilkul nai file create kri hogi hmne , ya to purani file ko change kiya hoga,or us hi file ko hm apni working directory se git ke staging area(wrking dir-staging area(add kiya jha)-final state(Commit)) me le jaana hoga or agr bich vaali stage me le jana hoga to hm likenge git add <-file name-> let suppose git add index.html to dikhayega git restore staged  file or new file: index .html aa jaayega ,jo chiz staged ho jaati usi ko hm commit krte h 
+//saari files ko ek sath add kr skte h: git add . (. means sb kuch) then check krenge git status to aayega changes to be commiteed kr ke saari file ka name README.md,index.html,style.css
+
+//add ke baad hm aa jaayenge commit(rishta pakka krne) krne:commit:recore of change(Ex: project ke andr signup button bnana)bhut saare chote chote changes ko add krte phir ek sath bada commit(1 set of resonably good changes) bhej skte h to es proccess ko  or changes ko commit krne ke liye hm likhte h git commit -m "some message"(or hmko generally message likhna chaiye ki kya krne ki kosish ki h hmne en changes ke sath)ex- git commit -m "Add new files"  or jb git status check krnege to On brach main bta rha hoga(local system ke and ek commit jada kr rkha h as compare to git hub ),or dikha rha h Nothing to commit,working tree clean or jo file hmare modified yellow me aa rhi thi vo bhi ab normal aa rhi h,jitne bhi changes kiye the hmne git ko bol diya finally ab esko yaad kro

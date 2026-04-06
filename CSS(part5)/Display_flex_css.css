@@ -1,0 +1,32 @@
+/* Display flex->container bnaya ek jo ki basically 1 div h  or agr flexbox property dena h to(usko flex container bolenge)ye parent div ke andar 3 or div bnaye h (html ke anadar 1,2,3)usko flex item bolenge hm 3 no div ko--->jese hi parent div ko
+(display:flex)  denge vese hi sb flex item bn jaayenge eske andar vaale sb div */
+
+#container{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display:flex;
+    /* Sb parent div me sma jaayenge overflow nhi krenge uske size ke acc manage ho jaayenge automatic -inspect kr ke dekkh lo */
+    flex-direction: column;
+    /* agr flex-direction ki(column wise(vertical rakhna element to or row wise(horizontally rakhna element to)to height or width ko ignore kr ke parent div ke acc flex khud change kr deta taaki space na bache or sb child div sma jaaye usme pr jb hoga ye tb height or width jada di ho parent se tb or parent se km di ho to nhi hoga ignore */
+}
+h1{
+    text-align: center;
+}
+#container div{
+    /* ignore */
+    width: 100px;
+    height: 300px;
+
+    /* not ignore */
+    /* width: 15px;
+    height: 25px; */
+
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* abhi jitne bhi div h ye sb overflow kr rhe container ke bhaar ja rhe pr ab hmko esko esa bna na h ki esme hi sma rhe ye  to hm flex bnayenge display:flex(ye limit kr deta h ki parent kr div ke andar hi rhe or (row (horizontal me),col(vertical me) dono kr skte*/
